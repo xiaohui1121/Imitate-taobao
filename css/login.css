@@ -1,0 +1,442 @@
+body {
+    font: 12px/1.5 Microsoft YaHei, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+    background-color: #fff;
+}
+
+/* header */
+.header {
+    height: 88px;
+    padding: 22px 0;
+}
+
+.header .left {
+    float: left;
+    width: 72px;
+    height: 45px;
+}
+
+.header .left h1 {
+    font-size: 0;
+}
+
+.header .left a {
+    display: block;
+    width: 72px;
+    height: 45px;
+    background: url(data:image/png;base64,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) no-repeat 0 0/100% 100%;
+}
+
+.header .right {
+    float: right;
+    height: 42px;
+}
+
+.header .right a {
+    display: block;
+}
+
+.header .right i {
+    float: left;
+    font-size: 16px !important;
+    color: #f40;
+}
+
+.header .jianyi {
+    float: right;
+    margin: 2px 2px 0;
+}
+
+/* content */
+.content {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    margin-bottom: 50px;
+    background-color: pink;
+    background: url(../images/login_bg.jpg) no-repeat;
+    background-position: -618px 0;
+}
+
+.content .shouji-tb {
+    position: absolute;
+    top: 80px;
+    left: 110px;
+    width: 630px;
+    height: 440px;
+}
+
+.content .shouji-tb a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.login-box {
+    position: absolute;
+    top: 120px;
+    right: 90px;
+    width: 350px;
+    padding: 26px;
+    background-color: #e9e9f2;
+}
+
+.login-switch-tab {
+    width: 300px;
+    height: 27px;
+    margin: 4px 0 20px;
+}
+
+.login-switch-tab a {
+    margin: 9px 10px 0 0;
+    padding-bottom: 3px;
+    font-size: 16px;
+    color: #3c3c3c;
+    font-weight: bold;
+}
+
+.login-switch-tab a.current {
+    border-bottom: 2px solid #000;
+}
+
+/* poptip */
+.poptip {
+    position: absolute;
+    top: 6px;
+    right: 58px;
+    height: 28px;
+    padding: 5px 10px;
+    background-color: #fefcee;
+    border: 1px solid #f3d995;
+    z-index: 999;
+}
+
+.poptip p {
+    line-height: 17px;
+    color: #ff9000;
+    text-align: center;
+}
+
+.poptip .arrow em {
+    position: absolute;
+    top: 8px;
+    right: -5px;
+    width: 10px;
+    height: 10px;
+    background-color: #fefcee;
+    border: 1px solid #ff9000;
+    transform: rotate(45deg);
+}
+
+.poptip .arrow span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 25px;
+    background-color: #fefcee;
+}
+
+/* qrcode */
+.switch-qrcode {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    width: 52px;
+    height: 52px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.switch-qrcode i {
+    position: absolute;
+    top: -12px;
+    right: 0;
+    color: #ff4400;
+    font-size: 42px !important;
+    /* font-size: 52px !important; */
+}
+
+.switch-qrcode em {
+    position: absolute;
+    top: 16px;
+    left: -36px;
+    display: block;
+    width: 73.5px;
+    height: 73.5px;
+    transform: rotate(45deg);
+    background-color: #e9e9f2;
+}
+
+
+/* 密码登录面板 */
+.login-id,
+.login-pwd {
+    position: relative;
+}
+
+.login-switch label {
+    position: absolute;
+    left: 0;
+    top: 1px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #cccccc;
+    text-align: center;
+}
+
+.login-switch label i {
+    font-size: 24px !important;
+    color: #fff;
+}
+
+.login-switch input {
+    width: 300px;
+    height: 42px;
+    margin-bottom: 23px;
+    padding-left: 50px;
+    border: 1px solid #f1eeee;
+    outline: none;
+    font-size: 14px;
+}
+
+.login-switch input::placeholder {
+    font-size: 14px;
+}
+
+.login-switch .submit button {
+    width: 300px;
+    height: 42px;
+    border: 1px solid #ff4400;
+    background-color: #ff4400;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.login-switch .submit button:hover {
+    background-color: #f52b00;
+}
+
+.login-links {
+    height: 24px;
+    margin-top: 16px;
+}
+
+.login-links a {
+    color: #6c6c6c;
+}
+
+.login-links a i {
+    font-size: 16px !important;
+    vertical-align: middle;
+}
+
+.weibo-login i {
+    color: #e52425;
+    margin-right: 2px;
+}
+
+.alipay-login i {
+    color: #1ba9ee;
+}
+
+.alipay-login {
+    margin-left: 5px;
+}
+
+.login-tools {
+    height: 18px;
+    margin-top: 16px;
+    text-align: right;
+}
+
+.login-tools a {
+    margin-left: 10px;
+    color: #6c6c6c;
+}
+
+/* 短信登录面板 */
+.login-msg .select {
+    position: absolute;
+    top: 1px;
+    left: 40px;
+    width: 65px;
+    height: 40px;
+    padding: 0 14px 0 10px;
+    background-color: pink;
+}
+
+.login-msg .login-id select {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 65px;
+    height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    /* 隐藏下拉图标 */
+    appearance: none;
+}
+
+.login-msg i.icon-select {
+    position: absolute;
+    top: 2px;
+    left: 48px;
+    font-size: 25px !important;
+    z-index: 999;
+}
+
+.login-msg .login-id select option {
+    display: block;
+    height: 380px;
+    width: 216px;
+}
+
+.login-msg .login-id input {
+    padding-left: 110px;
+}
+
+.login-msg .send-btn {
+    position: absolute;
+    top: 1px;
+    right: 5px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #fff;
+}
+
+.login-msg .send-btn a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #666;
+}
+
+.send-success {
+    position: relative;
+    width: 300px;
+    margin-bottom: 10px;
+    margin-top: -10px;
+    padding: 2px;
+}
+
+.send-success i {
+    position: absolute;
+    top: -1px;
+    left: -5px;
+    margin-left: 8px;
+    font-size: 16px !important;
+    color: #7ef705;
+    vertical-align: middle;
+}
+
+.send-success span {
+    display: inline-block;
+    width: 265px;
+    margin-left: 20px;
+}
+
+/* 扫码登录 */
+.scan-code {
+    position: relative;
+}
+
+.scan-code .qrcode-img {
+    width: 140px;
+    height: 140px;
+    margin: 45px auto 20px;
+    padding: 5px;
+    background-color: #fff;
+}
+
+.scan-code .mask {
+    position: absolute;
+    top: -45px;
+    left: 79px;
+    width: 140px;
+    height: 140px;
+    margin: 45px auto 20px;
+    background: hsla(0, 0%, 100%, .95);
+}
+
+.scan-code .mask p {
+    color: #3c3c3c;
+    font-size: 14px;
+    text-align: center;
+    margin: 38px 0 8px;
+    font-weight: bold;
+}
+
+.scan-code .mask .refresh {
+    width: 110px;
+    height: 34px;
+    background-color: #f40;
+    margin: 0 15px;
+    font-size: 12px;
+    color: #fff;
+    font-weight: 700;
+    border-right: 2px solid #ab2d00;
+    border-bottom: 2px solid #ab2d00;
+}
+
+.scan-code .scan-info {
+    width: 188px;
+    height: 36px;
+    margin: 0 auto;
+}
+
+.scan-info .saoma {
+    float: left;
+    width: 34px;
+    height: 36px;
+    line-height: 36px;
+    margin-right: 8px;
+}
+
+.scan-info .saoma i {
+    font-size: 34px !important;
+    color: #ff4400;
+}
+
+.scan-info .info {
+    float: left;
+    width: 146px;
+    height: 36px;
+}
+
+.scan-info .info a {
+    color: #666;
+}
+
+
+/* 不正当提示 */
+.errTip {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 40px;
+    line-height: 40px;
+    padding: 0 15px;
+    background-color: #4d4d4d;
+    background: rgba(77, 77, 77, .8);
+    border-radius: 5px;
+}
+
+.errTip span {
+    white-space: nowrap;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+}
+
+/* footer */
+.footer .certificate li:nth-child(4)::after,
+.footer .certificate li:nth-child(8)::after {
+    border: none;
+}

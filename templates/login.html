@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="//gw.alicdn.com/tps/i2/TB1nmqyFFXXXXcQbFXXE5jB3XXX-114-114.png"
+        type="image/x-icon" />
+    <title>伪淘宝网 - 淘！我喜欢</title>
+    <!-- 字体图标 -->
+    <link rel="stylesheet" href="../lib/iconfonts/iconfont.css">
+    <!-- 初始化 -->
+    <link rel="stylesheet" href="../css/base.css">
+    <!-- 公公样式 -->
+    <link rel="stylesheet" href="../css/common.css">
+    <!-- 自定义 -->
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+
+<body>
+    <!-- 顶部 -->
+    <div class="header">
+        <div class="wrapper">
+            <div class="left">
+                <h1>淘宝网<a href="../index.html"></a></h1>
+            </div>
+            <div class="right">
+                <a href="javascript:;">网站无障碍</a>
+                <i class="iconfont icon-tousuyujianyi"></i>
+                <a href="javascript:;" class="jianyi">"登录页面"改进建议</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 内容区 -->
+    <div class="content">
+        <div class="shouji-tb">
+            <a href="https://mpage.taobao.com/hd/download.html?spm=a2107.1.0.0.45cd11d9fWn34Z" target="_blank"></a>
+        </div>
+        <div class="login-box">
+            <!-- 密码/短信登录界面 tab栏显示 -->
+            <div class="login-switch-tab pwd_msg">
+                <a href="javascript:;" class="current" id="pwd-tab">密码登录</a>
+                <a href="javascript:;" id="msg-tab">短信登录</a>
+            </div>
+            <!-- 扫码界面标题显示 -->
+            <div class="login-switch-tab saoma hide">
+                <a href="javascript:;">手机扫码，安全登录</a>
+            </div>
+            <!-- 扫码登录提示只在非扫码界面显示 -->
+            <div class="poptip">
+                <div class="arrow">
+                    <em></em>
+                    <span></span>
+                </div>
+                <p>扫码登录更安全</p>
+            </div>
+            <div class="switch-qrcode">
+                <i class="iconfont icon-qrcode"></i>
+                <em></em>
+            </div>
+            <!-- 密码登录 -->
+            <div class="login-switch login-pwd">
+                <form action="#" name="pwdform">
+                    <div class="login-id">
+                        <label for="login-id"><i class="iconfont icon-user"></i></label>
+                        <input type="text" name="loginId" id="login-id" placeholder="会员名/邮箱/手机号">
+                    </div>
+                    <div class="login-pwd">
+                        <label for="login-pwd"><i class="iconfont icon-mima"></i></label>
+                        <input type="password" name="loginPwd" id="login-pwd" placeholder="请输入登录密码">
+                    </div>
+                    <div class="submit">
+                        <button type="submit" id="pwd-login">登录</button>
+                    </div>
+                </form>
+                <div class="login-links">
+                    <a href="javascript:;" class="weibo-login"><i class="iconfont icon-weibo-circle-fill"></i>微博登录</a>
+                    <a href="https://auth.alipay.com/login/index.htm?loginScene=7&goto=https%3A%2F%2Fauth.alipay.com%2Flogin%2Ftaobao_trust_login.htm%3Ftarget%3Dhttps%253A%252F%252Flogin.taobao.com%252Fmember%252Falipay_sign_dispatcher.jhtml%253Ftg%253Dhttps%25253A%25252F%25252Freg.taobao.com%25252Fmember%25252Freg%25252Ffast%25252Funion_reg%25253F_regfrom%25253DTB&params=VFBMX3JlZGlyZWN0X3VybD1odHRwcyUzQSUyRiUyRnJlZy50YW9iYW8uY29tJTJGbWVtYmVyJTJGcmVnJTJGZmFzdCUyRnVuaW9uX3JlZyUzRl9yZWdmcm9tJTNEVEI%3D" class="alipay-login"><i
+                            class="iconfont icon-alipay-circle-fill"></i>支付宝登录</a>
+                </div>
+                <div class="login-tools">
+                    <a href="javascript:;">忘记密码</a>
+                    <a href="javascript:;">忘记用户名</a>
+                    <a href="./register.html">免费注册</a>
+                </div>
+            </div>
+            <!-- 短信登录 -->
+            <div class="login-switch login-msg hide">
+                <form action="#" name="msgform">
+                    <div class="login-id">
+                        <label for="msg-login-id"><i class="iconfont icon-shouji"></i></label>
+                        <div class="select">
+                            <i class="iconfont icon-select"></i>
+                            <select name="telPre" id="">
+                                <option value="+86">+86</option>
+                                <option value="+86">+86 中国大陆</option>
+                                <option value="+86">+86 中国大陆</option>
+                                <option value="+86">+86 中国大陆</option>
+                                <option value="+86">+86 中国大陆</option>
+                                <option value="+86">+86 中国大陆</option>
+                                <option value="+86">+86 中国大陆</option>
+                                <option value="+86">+86 中国大陆</option>
+                                <option value="+86">+86 中国大陆</option>
+                                <option value="+86">+86 中国大陆</option>
+                                <option value="+86">+86 中国大陆</option>
+                                <option value="+86">+86 中国大陆</option>
+                                <option value="+86">+86 中国大陆</option>
+                                <option value="+86">+86 中国大陆</option>
+                                <option value="+86">+86 中国大陆</option>
+                                <option value="+86">+86 中国大陆</option>
+                                <option value="+86">+86 中国大陆</option>
+                                <option value="+86">+86 中国大陆</option>
+                            </select>
+                        </div>
+                        <input type="text" name="msgLoginId" id="msg-login-id" placeholder="请输入手机号">
+                    </div>
+                    <div class="login-pwd">
+                        <label for="msg-login-yzm"><i class="iconfont icon-yanzhengma"></i></label>
+                        <input type="text" maxlength="6" name="msgLoginYzm" id="msg-login-yzm" placeholder="请输入验证码">
+                        <div class="send-btn">
+                            <a href="javascript:;" id="sendMsg">获取验证码</a>
+                        </div>
+                    </div>
+                    <!-- 验证码发送成功提示 -->
+                    <div class="send-success hide">
+                        <i class="iconfont icon-chenggong"></i>
+                        <span>短信验证码已发送，可能会有延后请耐心等待</span>
+                    </div>
+                    <div class="submit">
+                        <button type="submit" id="msg-login">登录</button>
+                    </div>
+                </form>
+                <div class="login-links">
+                    <a href="javascript:;" class="weibo-login"><i class="iconfont icon-weibo-circle-fill"></i>微博登录</a>
+                    <a href="javascript:;" class="alipay-login"><i
+                            class="iconfont icon-alipay-circle-fill"></i>支付宝登录</a>
+                </div>
+                <div class="login-tools">
+                    <a href="./register.html">免费注册</a>
+                </div>
+            </div>
+            <!-- 扫码登录 -->
+            <div class="login-switch scan-code hide">
+                <div class="qrcode-img">
+                    <img src="../images/scanCode.png" alt="">
+                </div>
+                <!-- 失效遮罩 -->
+                <div class="mask hide">
+                    <p>二维码已失效</p>
+                    <button class="refresh">刷新二维码</button>
+                </div>
+                <div class="scan-info">
+                    <div class="saoma"><i class="iconfont icon-saoma"></i></div>
+                    <div class="info">
+                        <span>打开</span>
+                        <a href="javascript:;">淘宝App</a>
+                        <i>|</i>
+                        <a href="javascript:;">天猫App</a>
+                        <p>扫一扫登录</p>
+                    </div>
+                </div>
+                <div class="login-tools">
+                    <a href="javascript:;">密码登录</a>
+                    <a href="./register.html">免费注册</a>
+                </div>
+            </div>
+            <!-- 不正当提示 -->
+            <div class="errTip hide">
+                <span id="errTipInfo"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部版权信息 start -->
+    <div class="footer">
+        <div class="wrapper">
+            <div class="top">
+                <ul class="clearfix">
+                    <li><a href="javascript:;">阿里巴巴集团 </a></li>
+                    <li><a href="javascript:;">阿里巴巴国际站 </a></li>
+                    <li><a href="javascript:;">阿里巴巴中国站 </a></li>
+                    <li><a href="javascript:;">全球速卖通 </a></li>
+                    <li><a href="javascript:;">淘宝网 </a></li>
+                    <li><a href="javascript:;">天猫 </a></li>
+                    <li><a href="javascript:;">聚划算 </a></li>
+                    <li><a href="javascript:;">一淘 </a></li>
+                    <li><a href="javascript:;">阿里妈妈 </a></li>
+                    <li><a href="javascript:;">飞猪 </a></li>
+                    <li><a href="javascript:;">虾米 </a></li>
+                    <li><a href="javascript:;">阿里云计算 </a></li>
+                    <li><a href="javascript:;">云OS </a></li>
+                    <li><a href="javascript:;">万网 </a></li>
+                    <li><a href="javascript:;">支付宝</a></li>
+                </ul>
+            </div>
+            <div class="bottom">
+                <div class="copyright">
+                    <ul class="clearfix">
+                        <li><a href="javascript:;">关于淘宝</a></li>
+                        <li><a href="javascript:;">合作伙伴</a></li>
+                        <li><a href="javascript:;">营销中心</a></li>
+                        <li><a href="javascript:;">廉正举报</a></li>
+                        <li><a href="javascript:;">联系客服</a></li>
+                        <li><a href="javascript:;">开放平台</a></li>
+                        <li><a href="javascript:;">诚征英才</a></li>
+                        <li><a href="javascript:;">联系我们</a></li>
+                        <li><a href="javascript:;">网站地图</a></li>
+                        <li><a href="javascript:;">隐私权政策</a></li>
+                        <li><a href="javascript:;">法律声明</a></li>
+                        <li><a href="javascript:;">知识产权</a></li>
+                        <li>|</li>
+                        <li>© 2003-现在 Taobao.com 版权所有</li>
+                    </ul>
+                </div>
+                <div class="certificate">
+                    <ul class="clearfix">
+                        <li><a href="javascript:;">增值电信业务经营许可证：浙B2-20080224</a></li>
+                        <li><a href="javascript:;">增值电信业务经营许可证（跨地区）： B2-20150210</a></li>
+                        <li><a href="javascript:;">浙网文（2019）1033-086号</a></li>
+                        <li><a href="javascript:;">浙江省网络食品销售第三方平台提供者备案：浙网食A33010001</a></li>
+                        <li><a href="javascript:;">互联网药品信息服务资格证书（浙）-经营性-2018-0010</a></li>
+                        <li><a href="javascript:;">短消息类服务接入代码使用证书：号【2016】00154-A01</a></li>
+                        <li><a href="javascript:;">信息网络传播视听许可证：1109364号</a></li>
+                        <li><a href="javascript:;">出版物网络交易平台服务经营备案号：新出发浙备字第002号</a></li>
+                        <li><a href="javascript:;">浙公网安备 33010002000078号</a></li>
+                        <li><a href="javascript:;">浙B2-20080224-1</a></li>
+                        <li><a href="javascript:;">广播电视节目制作经营许可证（浙）字第01012号</a></li>
+                        <li><a href="javascript:;">市场名称登记证：工商网市字3301004120号</a></li>
+                        <li><a href="javascript:;">医疗器械网络交易服务第三方平台备案：（浙）网械平台备字[2018]第00004号</a></li>
+                    </ul>
+                </div>
+                <div class="footer-pic">
+                    <ul class="clearfix">
+                        <li><a href="javascript:;"></a></li>
+                        <li><a href="javascript:;"></a></li>
+                        <li><a href="javascript:;"></a></li>
+                        <li><a href="javascript:;"></a></li>
+                        <li><a href="javascript:;"></a></li>
+                        <li><a href="javascript:;"></a></li>
+                        <li><a href="javascript:;"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 底部版权信息 end -->
+
+    <!-- 引入js文件 -->
+    <!-- MD5加密 -->
+    <script src="../lib/MD5/md5.js"></script>
+    <script src="../js/login.js"></script>
+</body>
+
+</html>
