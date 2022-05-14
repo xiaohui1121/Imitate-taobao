@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪淘宝网 - 淘！我喜欢</title>
+    <meta name="description"
+        content="淘宝网 - 亚洲较大的网上交易平台，提供各类服饰、美容、家居、数码、话费/点卡充值… 数亿优质商品，同时提供担保交易(先收货后付款)等安全交易保障服务，并由商家提供退货承诺、破损补寄等消费者保障服务，让你安心享受网上购物乐趣！">
+    <meta name="keywords"
+        content="淘宝,掏宝,网上购物,C2C,在线交易,交易市场,网上交易,交易市场,网上买,网上卖,购物网站,团购,网上贸易,安全购物,电子商务,放心买,供应,买卖信息,网店,一口价,拍卖,网上开店,网络购物,打折,免费开店,网购,频道,店铺">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- 字体图标 -->
+    <link rel="stylesheet" href="./lib/iconfonts/iconfont.css">
+    <!-- 初始化样式 -->
+    <link rel="stylesheet" href="./css/base.css">
+    <!-- 公共样式 -->
+    <link rel="stylesheet" href="./css/common.css">
+    <!-- swiper插件样式文件 -->
+    <link rel="stylesheet" href="./lib/swiper8/swiper-bundle.min.css">
+    <!-- 自己的样式 -->
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <!-- 头部导航栏 start -->
+    <div class="cover">
+        <div class="wrapper">
+            <div class="left">
+                <ul>
+                    <!-- 地区 -->
+                    <li>
+                        <div class="menu-area drop-down-menu">
+                            <span>中国大陆</span>
+                            <i class="iconfont icon-xiangxia1"></i>
+                        </div>
+                    </li>
+                    <!-- 登陆注册 -->
+                    <li>
+                        <div class="reg-login">
+                            <a href="javascript:;" class="userLogined" style="display: none;"></a>
+                            <a href="./templates/login.html" class="login">亲，请登录</a>
+                            <a href="./templates/register.html" class="register">免费注册</a>
+                        </div>
+                    </li>
+                    <!-- 手机逛淘宝 -->
+                    <li>
+                        <div class="phone-tb">
+                            <a href="javascript:;">手机逛淘宝</a>
+                        </div>
+                    </li>
+                    <!-- 无障碍 -->
+                    <li>
+                        <div class="wuzhangai">
+                            <a href="javascript:;">网页无障碍</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="right">
+                <ul>
+                    <!-- 我的淘宝 -->
+                    <li>
+                        <div class="mytb-menu drop-down-menu">
+                            <a href="javascript:;">我的淘宝</a>
+                            <i class="iconfont icon-xiangxia1"></i>
+                        </div>
+                    </li>
+                    <!-- 购物车 -->
+                    <li>
+                        <div class="shop-car">
+                            <a href="javascript:;"><i class="iconfont icon-gouwuchefill"></i>购物车</a>
+                        </div>
+                    </li>
+                    <!-- 收藏夹 -->
+                    <li>
+                        <div class="favorites-menu drop-down-menu">
+                            <a href="javascript:;"><i class="iconfont icon-shoucang1"></i>收藏夹</a>
+                            <i class="iconfont icon-xiangxia1"></i>
+                        </div>
+                    </li>
+                    <!-- 商品分类 免费开店 -->
+                    <li>
+                        <div class="goods-fl">
+                            <a href="javascript:;" class="classify">商品分类</a>
+                            <a href="javascript:;" class="freeshop">免费开店</a>
+                        </div>
+                    </li>
+                    <li class="fengexian">|</li>
+                    <!-- 千牛卖家中心 -->
+                    <li>
+                        <div class="seller-center-menu drop-down-menu">
+                            <a href="javascript:;">千牛卖家中心</a>
+                            <i class="iconfont icon-xiangxia1"></i>
+                        </div>
+                    </li>
+                    <!-- 联系客服 -->
+                    <li>
+                        <div class="service-menu drop-down-menu">
+                            <a href="javascript:;">联系客服</a>
+                            <i class="iconfont icon-xiangxia1"></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 头部导航栏 end -->
+
+    <!-- 固定搜索 start-->
+    <div class="fixed-search">
+        <div class="wrapper">
+            <a href="./index.html">
+                <h2>淘宝网</h2>
+                <img src="./images/logo.png" alt="">
+            </a>
+            <div class="search">
+                <div class="choose-type">
+                    <ul>
+                        <li class="current"><a href="javascript:;">宝贝</a></li>
+                        <li><a href="javascript:;">天猫</a></li>
+                        <li><a href="javascript:;">店铺</a></li>
+                        <i class="iconfont icon-xiangxia1"></i>
+                    </ul>
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="毛绒玩具">
+                    <i class="iconfont icon-sousuo"></i>
+                </div>
+                <div class="search-btn">搜索</div>
+            </div>
+        </div>
+    </div>
+    <!-- 固定搜索 end-->
+
+    <!-- top-wrap start -->
+    <div class="top-wrap">
+        <div class="wrapper">
+            <div class="logo">
+                <h1><a href="./index.html">淘宝网</a></h1>
+            </div>
+            <div class="search">
+                <div class="choose-type">
+                    <ul>
+                        <li class="current"><a href="javascript:;">宝贝</a></li>
+                        <li><a href="javascript:;">天猫</a></li>
+                        <li><a href="javascript:;">店铺</a></li>
+                        <i class="iconfont icon-xiangxia1"></i>
+                    </ul>
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="毛绒玩具">
+                    <i class="iconfont icon-sousuo"></i>
+                </div>
+                <div class="search-btn">搜索</div>
+            </div>
+            <div class="search-hot">
+                <ul>
+                    <li><a href="./templates/search.html">新款连衣裙</a></li>
+                    <li><a href="./templates/search.html">四件套</a></li>
+                    <li><a href="./templates/search.html">潮流T恤</a></li>
+                    <li><a href="./templates/search.html">时尚女鞋</a></li>
+                    <li><a href="./templates/search.html">短裤</a></li>
+                    <li><a href="./templates/search.html">半身裙</a></li>
+                    <li><a href="./templates/search.html">男士外套</a></li>
+                    <li><a href="./templates/search.html">墙纸</a></li>
+                    <li><a href="./templates/search.html">行车记录仪</a></li>
+                    <li><a href="./templates/search.html">新款男鞋</a></li>
+                    <li><a href="./templates/search.html">耳机</a></li>
+                    <li><a href="./templates/search.html">时尚女包</a></li>
+                    <li><a href="./templates/search.html">沙发</a></li>
+                </ul>
+            </div>
+            <div class="qrcode">
+                <a href="javascript:;">
+                    <span>下载淘宝</span>
+                    <img src="./images/qrcode.png">
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- top-wrap end -->
+
+    <!-- main start -->
+    <div class="main wrapper">
+        <!-- 顶部导航 -->
+        <div class="tbh-nav">
+            <h2>主题市场</h2>
+            <ul class="nav-hd">
+                <li><a href="javascript:;">天猫</a></li>
+                <li><a href="javascript:;">聚划算</a></li>
+                <li><a href="javascript:;">天猫超市</a></li>
+            </ul>
+            <ul class="nav-bd">
+                <li class="line">|</li>
+                <li><a href="javascript:;">司法拍卖</a></li>
+                <li><a href="javascript:;">飞猪旅行</a></li>
+                <li><a href="javascript:;">天天特卖</a></li>
+            </ul>
+            <ul class="nav-bd">
+                <li class="line">|</li>
+                <li><a href="javascript:;">造点新货</a></li>
+                <li><a href="javascript:;">苏宁易购</a></li>
+                <li><a href="javascript:;">淘宝心选</a></li>
+                <li><a href="javascript:;">智能生活</a></li>
+                <li><a href="javascript:;">淘宝直播</a></li>
+            </ul>
+        </div>
+        <!-- screen-outer -->
+        <div class="screen-outer">
+            <div class="left">
+                <ul>
+                    <li>
+                        <i class="iconfont icon-nvzhuang"></i>
+                        <a href="./templates/search.html">女装</a>
+                        <span>/</span>
+                        <a href="./templates/search.html">内衣</a>
+                        <span>/</span>
+                        <a href="./templates/search.html">家居</a>
+                    </li>
+                    <li>
+                        <i class="iconfont icon-xiezi"></i>
+                        <a href="./templates/search.html">女鞋</a>
+                        <span>/</span>
+                        <a href="./templates/search.html">男鞋</a>
+                        <span>/</span>
+                        <a href="./templates/search.html">箱包</a>
+                    </li>
+                    <li>
+                        <i class="iconfont icon-wanju-muying"></i>
+                        <a href="./templates/search.html">母婴</a>
+                        <span>/</span>
+                        <a href="./templates/search.html">童装</a>
+                        <span>/</span>
+                        <a href="./templates/search.html">玩具</a>
+                    </li>
+                    <li>
+                        <i class="iconfont icon-nanzhuang"></i>
+                        <a href="./templates/search.html">男装</a>
+                        <span>/</span>
+                        <a href="./templates/search.html">运动户外</a>
+                    </li>
+                    <li>
+                        <i class="iconfont icon-meirong"></i>
+                        <a href="./templates/search.html">美妆</a>
+                        <span>/</span>
+                        <a href="./templates/search.html">彩妆</a>
+                        <span>/</span>
+                        <a href="./templates/search.html">个护</a>
+                    </li>
+                    <li>
+                        <i class="iconfont icon-shouji"></i>
+                        <a href="./templates/search.html">手机</a>
+                        <span>/</span>
+                        <a href="./templates/search.html">数码</a>
+                        <span>/</span>
+                        <a href="./templates/search.html">企业礼品</a>
+                    </li>
+                    <li>
+                        <i class="iconfont icon-xingzhuang"></i>
+                        <a href="./templates/search.html">大家电</a>
+                        <span>/</span>
+                        <a href="javascript:;">生活电器</a>
+                    </li>
+                    <li>
+                        <i class="iconfont icon-xianqulingshi"></i>
+                        <a href="./templates/search.html">零食</a>
+                        <span>/</span>
+                        <a href="./templates/search.html">生鲜</a>
+                        <span>/</span>
+                        <a href="./templates/search.html">茶酒</a>
+                    </li>
+                    <li>
+                        <i class="iconfont icon-chuju"></i>
+                        <a href="./templates/search.html">厨具</a>
+                        <span>/</span>
+                        <a href="./templates/search.html">收纳</a>
+                        <span>/</span>
+                        <a href="./templates/search.html">清洁</a>
+                    </li>
+                    <li>
+                        <i class="iconfont icon-jiajujiafang"></i>
+                        <a href="./templates/search.html">家纺</a>
+                        <span>/</span>
+                        <a href="./templates/search.html">家饰</a>
+                        <span>/</span>
+                        <a href="./templates/search.html">鲜花</a>
+                    </li>
+                    <li>
+                        <i class="iconfont icon-tushu"></i>
+                        <a href="./templates/search.html">图书音像</a>
+                        <span>/</span>
+                        <a href="./templates/search.html">文具</a>
+                    </li>
+                    <li>
+                        <i class="iconfont icon-yiyaoxiang"></i>
+                        <a href="./templates/search.html">医药保健</a>
+                        <span>/</span>
+                        <a href="./templates/search.html">进口</a>
+                    </li>
+                    <li>
+                        <i class="iconfont icon-icon"></i>
+                        <a href="./templates/search.html">汽车</a>
+                        <span>/</span>
+                        <a href="./templates/search.html">二手车</a>
+                        <span>/</span>
+                        <a href="./templates/search.html">用品</a>
+                    </li>
+                    <li>
+                        <i class="iconfont icon-fangchan"></i>
+                        <a href="./templates/search.html">房产</a>
+                        <span>/</span>
+                        <a href="./templates/search.html">装修家具</a>
+                        <span>/</span>
+                        <a href="./templates/search.html">建材</a>
+                    </li>
+                    <li>
+                        <i class="iconfont icon-shoubiao"></i>
+                        <a href="./templates/search.html">手表</a>
+                        <span>/</span>
+                        <a href="./templates/search.html">眼镜</a>
+                        <span>/</span>
+                        <a href="./templates/search.html">珠宝饰品</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="middle">
+                <div class="banner">
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><a href="javascript:;"><img src="./uploads/banner_01.jpg"
+                                        alt=""></a></div>
+                            <div class="swiper-slide"><a href="javascript:;"><img src="./uploads/banner_02.jpg"
+                                        alt=""></a></div>
+                            <div class="swiper-slide"><a href="javascript:;"><img src="./uploads/banner_03.jpg"
+                                        alt=""></a></div>
+                            <div class="swiper-slide"><a href="javascript:;"><img src="./uploads/banner_04.jpg"
+                                        alt=""></a></div>
+                            <div class="swiper-slide"><a href="javascript:;"><img src="./uploads/banner_05.jpg"
+                                        alt=""></a></div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <div class="inner">
+                    <span class="pic"></span>
+                    <em>理想生活上天猫</em>
+                    <!-- <strong><span class="pre">1</span>/<span class="next">5</span></strong> -->
+                </div>
+                <div class="mod">
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper-mod">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="javascript:;"><img src="./uploads/mod_02.jpg" alt=""></a>
+                                <a href="javascript:;"><img src="./uploads/mod_022.jpg" alt=""></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="javascript:;"><img src="./uploads/mod_01.jpg" alt=""></a>
+                                <a href="javascript:;"><img src="./uploads/mod_011.jpg" alt=""></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="javascript:;"><img src="./uploads/mod_02.jpg" alt=""></a>
+                                <a href="javascript:;"><img src="./uploads/mod_022.jpg" alt=""></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="javascript:;"><img src="./uploads/mod_01.jpg" alt=""></a>
+                                <a href="javascript:;"><img src="./uploads/mod_011.jpg" alt=""></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="javascript:;"><img src="./uploads/mod_02.jpg" alt=""></a>
+                                <a href="javascript:;"><img src="./uploads/mod_022.jpg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="menber">
+                    <div class="hd">
+                        <div class="head-icon"><a href="javascript:;"><img src="./images/head_icon.jpg" alt=""></a>
+                        </div>
+                        <a href="javascript:;" class="info" id="userInfo">Hi!<strong>你好</strong></a>
+                    </div>
+                    <div class="ft">
+                        <div class="logined" style="display: none;">
+                            <ul>
+                                <li><a href="javascript:;"><span>0</span>购物车</a></li>
+                                <li><a href="javascript:;"><span>1</span>待收货</a></li>
+                                <li><a href="javascript:;"><span>0</span>待发货</a></li>
+                                <li><a href="javascript:;"><span>0</span>待付款</a></li>
+                                <li><a href="javascript:;"><span>1</span>待评价</a></li>
+                            </ul>
+                        </div>
+                        <div class="no-login">
+                            <a href="./templates/login.html">登录</a>
+                            <a href="./templates/register.html">注册</a>
+                            <a href="javascript:;">开店</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tip">
+                    <a href="javascript:;"><img src="./images/taobaoguangguang.png" alt=""></a>
+                </div>
+                <div class="notice">
+                    <div class="notice-hd">
+                        <span>公告</span>
+                        <p>新鲜事儿都在这里~</p>
+                    </div>
+                    <div class="notice-content">
+                        <a href="javascript:;">
+                            <span>规则</span>
+                            <p>奥运知识产权规则解读</p>
+                        </a>
+                    </div>
+                    <div class="notice-content">
+                        <a href="javascript:;">
+                            <span>热点</span>
+                            <p>热点关于推进“清朗”账号乱象专项整治的通知</p>
+                        </a>
+                    </div>
+                    <div class="notice-content">
+                        <a href="javascript:;">
+                            <span>热点</span>
+                            <p>热点淘宝平台打击流量造假、黑公关、网络水军公告</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="mytao">
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <i class="iconfont icon-shoucang"></i>
+                                <p>收藏的宝贝</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <i class="iconfont icon-goumaijilu"></i>
+                                <p>买过的店铺</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <i class="iconfont icon-dianpu"></i>
+                                <p>收藏的店铺</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <i class="iconfont icon-lishi"></i>
+                                <p>我的足迹</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 有好货 -->
+        <div class="goods">
+            <div class="floor-hd">
+                <h5>有好货</h5>
+                <img src="./images/koubei.png">
+            </div>
+            <div class="floor-content">
+                <ul>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="./uploads/haohuo_01.png">
+                            <div class="info">
+                                <span>无独有偶创意中式结婚宴会喜字摆件</span>
+                                <p>月的场景了此款创意中式铁艺摆</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="./uploads/haohuo_01.png">
+                            <div class="info">
+                                <span>无独有偶创意中式结婚宴会喜字摆件</span>
+                                <p>月的场景了此款创意中式铁艺摆</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="./uploads/haohuo_01.png">
+                            <div class="info">
+                                <span>无独有偶创意中式结婚宴会喜字摆件</span>
+                                <p>月的场景了此款创意中式铁艺摆</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="./uploads/haohuo_01.png">
+                            <div class="info">
+                                <span>无独有偶创意中式结婚宴会喜字摆件</span>
+                                <p>月的场景了此款创意中式铁艺摆</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="./uploads/haohuo_01.png">
+                            <div class="info">
+                                <span>无独有偶创意中式结婚宴会喜字摆件</span>
+                                <p>月的场景了此款创意中式铁艺摆</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 猜你喜欢 -->
+        <div class="love">
+            <div class="floor-hd">
+                <h5>猜你喜欢</h5>
+                <img src="./images/gexing.png">
+            </div>
+            <div class="floor-content">
+                <ul>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="./uploads/love_01.png">
+                            <div class="info">
+                                <span>土耳其进口复古浮雕玻璃收纳罐子坚果杂粮饼干零食糖储物泡菜瓶子</span>
+                                <span class="price">¥<p>21</p></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="./uploads/love_01.png">
+                            <div class="info">
+                                <span>土耳其进口复古浮雕玻璃收纳罐子坚果杂粮饼干零食糖储物泡菜瓶子</span>
+                                <span class="price">¥<p>21</p></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="./uploads/love_01.png">
+                            <div class="info">
+                                <span>土耳其进口复古浮雕玻璃收纳罐子坚果杂粮饼干零食糖储物泡菜瓶子</span>
+                                <span class="price">¥<p>21</p></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="./uploads/love_01.png">
+                            <div class="info">
+                                <span>土耳其进口复古浮雕玻璃收纳罐子坚果杂粮饼干零食糖储物泡菜瓶子</span>
+                                <span class="price">¥<p>21</p></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="./uploads/love_01.png">
+                            <div class="info">
+                                <span>土耳其进口复古浮雕玻璃收纳罐子坚果杂粮饼干零食糖储物泡菜瓶子</span>
+                                <span class="price">¥<p>21</p></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="./uploads/love_01.png">
+                            <div class="info">
+                                <span>土耳其进口复古浮雕玻璃收纳罐子坚果杂粮饼干零食糖储物泡菜瓶子</span>
+                                <span class="price">¥<p>21</p></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="./uploads/love_01.png">
+                            <div class="info">
+                                <span>土耳其进口复古浮雕玻璃收纳罐子坚果杂粮饼干零食糖储物泡菜瓶子</span>
+                                <span class="price">¥<p>21</p></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="./uploads/love_01.png">
+                            <div class="info">
+                                <span>土耳其进口复古浮雕玻璃收纳罐子坚果杂粮饼干零食糖储物泡菜瓶子</span>
+                                <span class="price">¥<p>21</p></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="./uploads/love_01.png">
+                            <div class="info">
+                                <span>土耳其进口复古浮雕玻璃收纳罐子坚果杂粮饼干零食糖储物泡菜瓶子</span>
+                                <span class="price">¥<p>21</p></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="./uploads/love_01.png">
+                            <div class="info">
+                                <span>土耳其进口复古浮雕玻璃收纳罐子坚果杂粮饼干零食糖储物泡菜瓶子</span>
+                                <span class="price">¥<p>21</p></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="./uploads/love_01.png">
+                            <div class="info">
+                                <span>土耳其进口复古浮雕玻璃收纳罐子坚果杂粮饼干零食糖储物泡菜瓶子</span>
+                                <span class="price">¥<p>21</p></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="./uploads/love_01.png">
+                            <div class="info">
+                                <span>土耳其进口复古浮雕玻璃收纳罐子坚果杂粮饼干零食糖储物泡菜瓶子</span>
+                                <span class="price">¥<p>21</p></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="./uploads/love_01.png">
+                            <div class="info">
+                                <span>土耳其进口复古浮雕玻璃收纳罐子坚果杂粮饼干零食糖储物泡菜瓶子</span>
+                                <span class="price">¥<p>21</p></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="./uploads/love_01.png">
+                            <div class="info">
+                                <span>土耳其进口复古浮雕玻璃收纳罐子坚果杂粮饼干零食糖储物泡菜瓶子</span>
+                                <span class="price">¥<p>21</p></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="./uploads/love_01.png">
+                            <div class="info">
+                                <span>土耳其进口复古浮雕玻璃收纳罐子坚果杂粮饼干零食糖储物泡菜瓶子</span>
+                                <span class="price">¥<p>21</p></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="./uploads/love_01.png">
+                            <div class="info">
+                                <span>土耳其进口复古浮雕玻璃收纳罐子坚果杂粮饼干零食糖储物泡菜瓶子</span>
+                                <span class="price">¥<p>21</p></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="./uploads/love_01.png">
+                            <div class="info">
+                                <span>土耳其进口复古浮雕玻璃收纳罐子坚果杂粮饼干零食糖储物泡菜瓶子</span>
+                                <span class="price">¥<p>21</p></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="./uploads/love_01.png">
+                            <div class="info">
+                                <span>土耳其进口复古浮雕玻璃收纳罐子坚果杂粮饼干零食糖储物泡菜瓶子</span>
+                                <span class="price">¥<p>21</p></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="./uploads/love_01.png">
+                            <div class="info">
+                                <span>土耳其进口复古浮雕玻璃收纳罐子坚果杂粮饼干零食糖储物泡菜瓶子</span>
+                                <span class="price">¥<p>21</p></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="./uploads/love_01.png">
+                            <div class="info">
+                                <span>土耳其进口复古浮雕玻璃收纳罐子坚果杂粮饼干零食糖储物泡菜瓶子</span>
+                                <span class="price">¥<p>21</p></span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- END区域 -->
+        <div class="end">
+            <div class="end-hd">
+                <span>END</span>
+            </div>
+            <div class="end-bd">
+                <div class="mod-wrap">
+                    <div class="title">
+                        <i class="iconfont icon-baozhang"></i>
+                        <h4>消费者保障</h4>
+                    </div>
+                    <ul>
+                        <li><a href="javascript:;">保障范围</a></li>
+                        <li><a href="javascript:;">退货退款流程</a></li>
+                        <li><a href="javascript:;">服务中心</a></li>
+                        <li><a href="javascript:;">更多特色服务</a></li>
+                    </ul>
+                </div>
+                <div class="mod-wrap">
+                    <div class="title">
+                        <i class="iconfont icon-bangzhu"></i>
+                        <h4>新手上路</h4>
+                    </div>
+                    <ul>
+                        <li><a href="javascript:;">新手专区</a></li>
+                        <li><a href="javascript:;">24小时在线帮助</a></li>
+                        <li><a href="javascript:;">免费开店</a></li>
+                    </ul>
+                </div>
+                <div class="mod-wrap">
+                    <div class="title">
+                        <i class="iconfont icon-qian"></i>
+                        <h4>付款方式</h4>
+                    </div>
+                    <ul>
+                        <li><a href="javascript:;">快捷支付</a></li>
+                        <li><a href="javascript:;">信用卡</a></li>
+                        <li><a href="javascript:;">余额宝</a></li>
+                        <li><a href="javascript:;">蚂蚁花呗</a></li>
+                    </ul>
+                </div>
+                <div class="mod-wrap">
+                    <div class="title">
+                        <i class="iconfont icon-taobaotese"></i>
+                        <h4>淘宝特色</h4>
+                    </div>
+                    <ul>
+                        <li><a href="javascript:;">手机淘宝</a></li>
+                        <li><a href="javascript:;">旺旺/旺信</a></li>
+                        <li><a href="javascript:;">大众评审</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- main start -->
+
+    <!-- fixedTool start -->
+    <div class="fixedTool" id="tool">
+        <i class="iconfont icon-wangwang"></i>
+        <ul>
+            <li class="current"><a href="javascript:;">品质<br>好货</a></li>
+            <li><a href="javascript:;">猜你<br>喜欢</a></li>
+            <li><a href="javascript:;" class="pos goup"><i class="iconfont icon-xiangshang"></i>顶部</a></li>
+            <li><a href="javascript:;" class="pos">反馈</a></li>
+            <li><a href="javascript:;">暴恐<br>举报</a></li>
+        </ul>
+    </div>
+    <!-- fixedTool end -->
+
+    <!-- 底部版权信息 start -->
+    <div class="footer">
+        <div class="wrapper">
+            <div class="top">
+                <ul class="clearfix">
+                    <li><a href="javascript:;">阿里巴巴集团</a></li>
+                    <li><a href="javascript:;">淘宝网</a></li>
+                    <li><a href="javascript:;">天猫</a></li>
+                    <li><a href="javascript:;">聚划算</a></li>
+                    <li><a href="javascript:;">全球速卖通</a></li>
+                    <li><a href="javascript:;">阿里巴巴国际交易市场</a></li>
+                    <li><a href="javascript:;">1688</a></li>
+                    <li><a href="javascript:;">阿里妈妈</a></li>
+                    <li><a href="javascript:;">飞猪</a></li>
+                    <li><a href="javascript:;">阿里云计算</a></li>
+                    <li><a href="javascript:;">AliOS</a></li>
+                    <li><a href="javascript:;">阿里通信</a></li>
+                    <li><a href="javascript:;">一淘</a></li>
+                    <li><a href="javascript:;">万网</a></li>
+                    <li><a href="javascript:;">高德</a></li>
+                    <li><a href="javascript:;">UC</a></li>
+                    <li><a href="javascript:;">友盟</a></li>
+                    <li><a href="javascript:;">阿里安全</a></li>
+                    <li><a href="javascript:;">大麦网</a></li>
+                    <li><a href="javascript:;">钉钉</a></li>
+                    <li><a href="javascript:;">支付宝</a></li>
+                    <li><a href="javascript:;">优酷</a></li>
+                    <li><a href="javascript:;">土豆</a></li>
+                    <li><a href="javascript:;">阿里健康</a></li>
+                    <li><a href="javascript:;">阿里影业</a></li>
+                    <li><a href="javascript:;">网商银行</a></li>
+                </ul>
+            </div>
+            <div class="bottom">
+                <div class="copyright">
+                    <ul class="clearfix">
+                        <li><a href="javascript:;">关于淘宝</a></li>
+                        <li><a href="javascript:;">营销中心</a></li>
+                        <li><a href="javascript:;">廉正举报</a></li>
+                        <li><a href="javascript:;">联系客服</a></li>
+                        <li><a href="javascript:;">开放平台</a></li>
+                        <li><a href="javascript:;">诚征英才</a></li>
+                        <li><a href="javascript:;">联系我们</a></li>
+                        <li><a href="javascript:;">隐私权政策</a></li>
+                        <li><a href="javascript:;">法律声明</a></li>
+                        <li><a href="javascript:;">知识产权</a></li>
+                        <li><a href="javascript:;">不当竞争举报</a></li>
+                        <li><a href="javascript:;">规则意见征集</a></li>
+                        <li>|</li>
+                        <li>© 2003-现在 Taobao.com 版权所有</li>
+                    </ul>
+                </div>
+                <div class="certificate">
+                    <ul class="clearfix">
+                        <li><a href="javascript:;">增值电信业务经营许可证：浙B2-20080224</a></li>
+                        <li><a href="javascript:;">增值电信业务经营许可证（跨地区）： B2-20150210</a></li>
+                        <li><a href="javascript:;">浙网文（2019）1033-086号</a></li>
+                        <li><a href="javascript:;">浙江省网络食品销售第三方平台提供者备案：浙网食A33010001</a></li>
+                        <li><a href="javascript:;">互联网药品信息服务资格证书（浙）-经营性-2018-0010</a></li>
+                        <li><a href="javascript:;">短消息类服务接入代码使用证书：号【2016】00154-A01</a></li>
+                        <li><a href="javascript:;">信息网络传播视听许可证：1109364号</a></li>
+                        <li><a href="javascript:;">出版物网络交易平台服务经营备案号：新出发浙备字第002号</a></li>
+                        <li><span class="gonganPic"></span><a href="javascript:;">浙公网安备 33010002000078号</a></li>
+                        <li><a href="javascript:;">浙B2-20080224-1</a></li>
+                        <li><a href="javascript:;">广播电视节目制作经营许可证（浙）字第01012号</a></li>
+                        <li><a href="javascript:;">市场名称登记证：工商网市字3301004120号</a></li>
+                        <li><a href="javascript:;">医疗器械网络交易服务第三方平台备案：（浙）网械平台备字[2018]第00004号</a></li>
+                    </ul>
+                </div>
+                <div class="footer-pic">
+                    <ul class="clearfix">
+                        <li><a href="javascript:;"></a></li>
+                        <li><a href="javascript:;"></a></li>
+                        <li><a href="javascript:;"></a></li>
+                        <li><a href="javascript:;"></a></li>
+                        <li><a href="javascript:;"></a></li>
+                        <li><a href="javascript:;"></a></li>
+                        <li><a href="javascript:;"></a></li>
+                        <li><a href="javascript:;"></a></li>
+                        <li><a href="javascript:;"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 底部版权信息 end -->
+
+    <!-- 引入swiper插件的js文件 -->
+    <script src="./lib/swiper8/swiper-bundle.min.js"></script>
+    <!-- 引入js -->
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
