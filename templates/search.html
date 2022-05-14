@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="淘宝搜索是最智能的商品搜索引擎，通过大数据的运营，准确的理解商品与用户，提供精准的个性化搜索体验。">
+    <!-- <meta name="keywords" content="收纳,收纳_淘宝网,收纳_淘宝搜索"> -->
+    <title>伪淘宝搜索</title>
+    <link rel="stylesheet" href="../lib/layui-v2.6.8/layui/css/layui.css">
+    <link rel="stylesheet" href="../lib/iconfonts/iconfont.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/search.css">
+</head>
+
+<body>
+    <!-- 头部导航栏 start -->
+    <div class="cover">
+        <div class="wrapper">
+            <div class="left">
+                <ul>
+                    <!-- 地区 -->
+                    <li>
+                        <div class="menu-area drop-down-menu">
+                            <span>中国大陆</span>
+                            <i class="iconfont icon-xiangxia1"></i>
+                        </div>
+                    </li>
+                    <!-- 登陆注册 -->
+                    <li>
+                        <div class="reg-login">
+                            <a href="javascript:;" class="userLogined"></a>
+                            <a href="./login.html" class="login">亲，请登录</a>
+                            <a href="./register.html" class="register">免费注册</a>
+                        </div>
+                    </li>
+                    <!-- 手机逛淘宝 -->
+                    <li>
+                        <div class="phone-tb">
+                            <a href="javascript:;">手机逛淘宝</a>
+                        </div>
+                    </li>
+                    <!-- 无障碍 -->
+                    <li>
+                        <div class="wuzhangai">
+                            <a href="javascript:;">网页无障碍</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="right">
+                <ul>
+                    <!-- 淘宝网首页 -->
+                    <li>
+                        <div class="mytb-menu drop-down-menu">
+                            <a href="../index.html">淘宝网首页</a>
+                        </div>
+                    </li>
+                    <!-- 我的淘宝 -->
+                    <li>
+                        <div class="mytb-menu drop-down-menu">
+                            <a href="javascript:;">我的淘宝</a>
+                            <i class="iconfont icon-xiangxia1"></i>
+                        </div>
+                    </li>
+                    <!-- 购物车 -->
+                    <li>
+                        <div class="shop-car">
+                            <a href="javascript:;"><i class="iconfont icon-gouwuchefill"></i>购物车</a>
+                        </div>
+                    </li>
+                    <!-- 收藏夹 -->
+                    <li>
+                        <div class="favorites-menu drop-down-menu">
+                            <a href="javascript:;"><i class="iconfont icon-shoucang1"></i>收藏夹</a>
+                            <i class="iconfont icon-xiangxia1"></i>
+                        </div>
+                    </li>
+                    <!-- 商品分类 免费开店 -->
+                    <li>
+                        <div class="goods-fl">
+                            <a href="javascript:;" class="classify">商品分类</a>
+                            <a href="javascript:;" class="freeshop">免费开店</a>
+                        </div>
+                    </li>
+                    <li class="fengexian">|</li>
+                    <!-- 千牛卖家中心 -->
+                    <li>
+                        <div class="seller-center-menu drop-down-menu">
+                            <a href="javascript:;">千牛卖家中心</a>
+                            <i class="iconfont icon-xiangxia1"></i>
+                        </div>
+                    </li>
+                    <!-- 联系客服 -->
+                    <li>
+                        <div class="service-menu drop-down-menu">
+                            <a href="javascript:;">联系客服</a>
+                            <i class="iconfont icon-xiangxia1"></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 头部导航栏 end -->
+
+    <!-- 固定搜索栏 start -->
+    <div class="wrapper">
+        <div class="fixed-search wraper940">
+            <!-- logo -->
+            <div class="logo">
+                <h1>淘宝网<a href="../index.html">12</a></h1>
+            </div>
+            <!-- search -->
+            <div class="search-container">
+                <div class="search-type">
+                    <i class="iconfont icon-xiangxia"></i>
+                    <!-- 获得焦点后更换字体图标 -->
+                    <!-- <i class="iconfont icon-xiangshang"></i> -->
+                    <ul>
+                        <li class="current">宝贝</li>
+                        <li>店铺</li>
+                    </ul>
+                </div>
+                <div class="search-input">
+                    <input type="text" name="" class="searchVal" value="" placeholder="请输入要搜索的词">
+                </div>
+                <div class="search-btn">
+                    <button>搜 索</button>
+                </div>
+            </div>
+            <!-- 结果排除 -->
+            <div class="ruleOut">
+                <label for="ruleOutIpt">在结果中排除</label>
+                <input type="text" name="" id="ruleOutIpt" placeholder="请输入要排除的词">
+                <button type="submit">确定</button>
+                <span class="close"><i class="iconfont icon-cuowuguanbiquxiao-xianxingyuankuang"></i></span>
+            </div>
+        </div>
+    </div>
+    <!-- 固定搜索栏 end -->
+
+    <!-- 顶部搜索栏 start -->
+    <div class="topSearch wrapper">
+        <div class="header-wraper wraper940">
+            <!-- logo -->
+            <div class="logo">
+                <h1>淘宝网<a href="../index.html">12</a></h1>
+            </div>
+            <!-- search -->
+            <div class="search-container">
+                <div class="search-type">
+                    <i class="iconfont icon-xiangxia"></i>
+                    <!-- 获得焦点后更换字体图标 -->
+                    <!-- <i class="iconfont icon-xiangshang"></i> -->
+                    <ul>
+                        <li class="current">宝贝</li>
+                        <li>店铺</li>
+                    </ul>
+                </div>
+                <div class="search-input">
+                    <input type="text" name="" class="searchVal" value="" placeholder="请输入要搜索的词">
+                </div>
+                <div class="search-btn">
+                    <button>搜 索</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 顶部搜索栏 end -->
+
+    <!-- content-tab start -->
+    <div class="content-tab wrapper">
+        <div class="tab wraper940">
+            <!-- tab 切换 -->
+            <div class="tab-switch">
+                <ul>
+                    <li class="current"><a href="javascript:;">所有宝贝</a></li>
+                    <li><a href="javascript:;">天猫</a></li>
+                    <li><a href="javascript:;">二手</a></li>
+                </ul>
+            </div>
+            <!-- tab 分类 -->
+            <div class="tab-classify">
+                <div class="hd">
+                    <h5>所有分类<i class="iconfont icon-gengduo"></i></h5>
+                    <a href="javascript:;">收起筛选<i class="iconfont icon-xiangshang"></i></a>
+                </div>
+                <div class="bd">
+                    <div class="classify-item">
+                        <div class="title">
+                            <h4><span>品牌</span>:</h4>
+                        </div>
+                        <div class="body">
+                            <ul>
+                                <li><a href="javascript:;">TAILI/太力</a></li>
+                                <li><a href="javascript:;">DR．STORAGE/收纳博士</a></li>
+                                <li><a href="javascript:;">星优</a></li>
+                                <li><a href="javascript:;">IRIS</a></li>
+                                <li><a href="javascript:;">居家家</a></li>
+                                <li><a href="javascript:;">百易特</a></li>
+                                <li><a href="javascript:;">茶花</a></li>
+                                <li><a href="javascript:;">优思居</a></li>
+                                <li><a href="javascript:;">纳份爱</a></li>
+                                <li><a href="javascript:;">收纳总动员</a></li>
+                                <li><a href="javascript:;">沃之沃</a></li>
+                                <li><a href="javascript:;">Tenma</a></li>
+                                <li><a href="javascript:;">Jeko＆Jeko</a></li>
+                                <li><a href="javascript:;">亚加丽加</a></li>
+                                <li><a href="javascript:;">歌彩优</a></li>
+                            </ul>
+                        </div>
+                        <div class="handle">
+                            <span><a href="javascript:;">多选</a></span>
+                            <span><a href="javascript:;">更多</a><i class="iconfont icon-xiangxia"></i></span>
+                        </div>
+                    </div>
+                    <div class="classify-item">
+                        <div class="title">
+                            <h4><span>材质</span>:</h4>
+                        </div>
+                        <div class="body">
+                            <ul>
+                                <li><a href="javascript:;">塑料</a></li>
+                                <li><a href="javascript:;">金属</a></li>
+                                <li><a href="javascript:;">棉布</a></li>
+                                <li><a href="javascript:;">牛津纺</a></li>
+                                <li><a href="javascript:;">PA+PE材质</a></li>
+                                <li><a href="javascript:;">碳钢</a></li>
+                                <li><a href="javascript:;">无纺布</a></li>
+                                <li><a href="javascript:;">铁</a></li>
+                                <li><a href="javascript:;">201不锈钢</a></li>
+                            </ul>
+                        </div>
+                        <div class="handle">
+                            <span><a href="javascript:;">多选</a></span>
+                            <span><a href="javascript:;">更多</a><i class="iconfont icon-xiangxia"></i></span>
+                        </div>
+                    </div>
+                    <div class="classify-item">
+                        <div class="title">
+                            <h4><span>尺寸</span>:</h4>
+                        </div>
+                        <div class="body">
+                            <ul>
+                                <li><a href="javascript:;">小号</a></li>
+                                <li><a href="javascript:;">中号</a></li>
+                                <li><a href="javascript:;">大号</a></li>
+                                <li><a href="javascript:;">特大号</a></li>
+                                <li><a href="javascript:;">32cmx22cmx16cm</a></li>
+                                <li><a href="javascript:;">33*15*85 cm</a></li>
+                                <li><a href="javascript:;">40*40*25 cm</a></li>
+                            </ul>
+                        </div>
+                        <div class="handle">
+                            <span><a href="javascript:;">多选</a></span>
+                            <span><a href="javascript:;">更多</a><i class="iconfont icon-xiangxia"></i></span>
+                        </div>
+                    </div>
+                    <div class="classify-item">
+                        <div class="title">
+                            <h4><span>适用空间</span>:</h4>
+                        </div>
+                        <div class="body">
+                            <ul>
+                                <li><a href="javascript:;">卧室</a></li>
+                                <li><a href="javascript:;">衣橱/衣帽间</a></li>
+                                <li><a href="javascript:;">客厅</a></li>
+                                <li><a href="javascript:;">厨房</a></li>
+                                <li><a href="javascript:;">浴室</a></li>
+                                <li><a href="javascript:;">宿舍</a></li>
+                                <li><a href="javascript:;">书房</a></li>
+                                <li><a href="javascript:;">办公室</a></li>
+                                <li><a href="javascript:;">衣柜/衣橱</a></li>
+                            </ul>
+                        </div>
+                        <div class="handle">
+                            <span><a href="javascript:;">多选</a></span>
+                            <span><a href="javascript:;">更多</a><i class="iconfont icon-xiangxia"></i></span>
+                        </div>
+                    </div>
+                    <div class="classify-item filter">
+                        <div class="title">
+                            <h4><span>筛选条件</span>:</h4>
+                        </div>
+                        <div class="body">
+                            <ul>
+                                <li data-index="0"><a href="javascript:;">风格<i class="iconfont icon-xiangxia"></i></a>
+                                </li>
+                                <li data-index="1"><a href="javascript:;">安装方式<i class="iconfont icon-xiangxia"></i></a>
+                                </li>
+                                <li data-index="2"><a href="javascript:;">适用对象<i class="iconfont icon-xiangxia"></i></a>
+                                </li>
+                                <li data-index="3"><a href="javascript:;">层数<i class="iconfont icon-xiangxia"></i></a>
+                                </li>
+                                <li data-index="4"><a href="javascript:;">相关分类<i class="iconfont icon-xiangxia"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="handle"></div>
+                    </div>
+                </div>
+                <!-- 筛选条件的项目显示，平时隐藏，悬浮时显示 -->
+                <div class="filter-item">
+                    <ul>
+                        <li><a href="javascript:;">日式</a></li>
+                        <li><a href="javascript:;">北欧风格</a></li>
+                        <li><a href="javascript:;">简约现代</a></li>
+                        <li><a href="javascript:;">欧式</a></li>
+                        <li><a href="javascript:;">简约</a></li>
+                        <li><a href="javascript:;">韩式</a></li>
+                        <li><a href="javascript:;">中式</a></li>
+                        <li><a href="javascript:;">少女心</a></li>
+                        <li><a href="javascript:;">小清新</a></li>
+                        <li><a href="javascript:;">美式</a></li>
+                        <li><a href="javascript:;">复古</a></li>
+                        <li><a href="javascript:;">卡通</a></li>
+                        <li><a href="javascript:;">公主</a></li>
+                        <li><a href="javascript:;">东南亚</a></li>
+                        <li><a href="javascript:;">田园</a></li>
+                        <li><a href="javascript:;">美式乡村</a></li>
+                        <li><a href="javascript:;">现代中式</a></li>
+                        <li><a href="javascript:;">法式</a></li>
+                        <li><a href="javascript:;">轻奢</a></li>
+                        <li><a href="javascript:;">新中式</a></li>
+                    </ul>
+                </div>
+                <div class="filter-item">
+                    <ul>
+                        <li><a href="javascript:;">免打孔</a></li>
+                        <li><a href="javascript:;">置地式</a></li>
+                        <li><a href="javascript:;">吸壁式</a></li>
+                        <li><a href="javascript:;">擎天立地式</a></li>
+                        <li><a href="javascript:;">挂钩式</a></li>
+                        <li><a href="javascript:;">台置</a></li>
+                        <li><a href="javascript:;">螺钉嵌入式</a></li>
+                        <li><a href="javascript:;">打孔</a></li>
+                    </ul>
+                </div>
+                <div class="filter-item">
+                    <ul>
+                        <li><a href="javascript:;">被子</a></li>
+                        <li><a href="javascript:;">绒毛玩具</a></li>
+                        <li><a href="javascript:;">杂物</a></li>
+                        <li><a href="javascript:;">毛衣</a></li>
+                        <li><a href="javascript:;">内衣</a></li>
+                        <li><a href="javascript:;">包包</a></li>
+                        <li><a href="javascript:;">大衣/西服</a></li>
+                        <li><a href="javascript:;">衣帽</a></li>
+                        <li><a href="javascript:;">化妆用品/首饰</a></li>
+                        <li><a href="javascript:;">卫生棉/卫生巾</a></li>
+                        <li><a href="javascript:;">遥控器</a></li>
+                        <li><a href="javascript:;">耳机线/电线</a></li>
+                        <li><a href="javascript:;">磁卡</a></li>
+                        <li><a href="javascript:;">蔬菜</a></li>
+                        <li><a href="javascript:;">鞋</a></li>
+                        <li><a href="javascript:;">皮包</a></li>
+                        <li><a href="javascript:;">玩具</a></li>
+                        <li><a href="javascript:;">护肤品</a></li>
+                        <li><a href="javascript:;">食物</a></li>
+                    </ul>
+                </div>
+                <div class="filter-item">
+                    <ul>
+                        <li><a href="javascript:;">单层</a></li>
+                        <li><a href="javascript:;">1层</a></li>
+                        <li><a href="javascript:;">2层</a></li>
+                        <li><a href="javascript:;">3层</a></li>
+                        <li><a href="javascript:;">4层</a></li>
+                        <li><a href="javascript:;">5层</a></li>
+                        <li><a href="javascript:;">5层以上</a></li>
+                    </ul>
+                </div>
+                <div class="filter-item">
+                    <ul>
+                        <li><a href="javascript:;">清洁工具/收纳整理</a></li>
+                        <li><a href="javascript:;">收纳整理</a></li>
+                        <li><a href="javascript:;">居家日用</a></li>
+                        <li><a href="javascript:;">厨房/餐饮用具</a></li>
+                        <li><a href="javascript:;">住宅家具</a></li>
+                        <li><a href="javascript:;">文具电教/文化用品/商务用品</a></li>
+                        <li><a href="javascript:;">餐饮具</a></li>
+                        <li><a href="javascript:;">五金/工具</a></li>
+                        <li><a href="javascript:;">饰品/流行首饰/时尚饰品</a></li>
+                        <li><a href="javascript:;">家装主材</a></li>
+                        <li><a href="javascript:;">汽车内外饰用品</a></li>
+                        <li><a href="javascript:;">户外运动用品</a></li>
+                        <li><a href="javascript:;">玩具/童车/益智/积木/模型</a></li>
+                        <li><a href="javascript:;">家居饰品</a></li>
+                        <li><a href="javascript:;">3C数码配件市场</a></li>
+                        <li><a href="javascript:;">运动包/户外包/配件</a></li>
+                        <li><a href="javascript:;">运动/瑜伽/健身/球迷用品</a></li>
+                        <li><a href="javascript:;">网店/网络服务/软件</a></li>
+                        <li><a href="javascript:;">商业/办公家具</a></li>
+                        <li><a href="javascript:;">功能箱包</a></li>
+                        <li><a href="javascript:;">男包</a></li>
+                        <li><a href="javascript:;">车载电子/影音</a></li>
+                        <li><a href="javascript:;">彩妆/香水/美妆工具</a></li>
+                        <li><a href="javascript:;">包装</a></li>
+                        <li><a href="javascript:;">女包</a></li>
+                        <li><a href="javascript:;">居家布艺/窗帘地毯/缝纫DIY</a></li>
+                        <li><a href="javascript:;">电子/电工</a></li>
+                        <li><a href="javascript:;">节庆用品/礼品</a></li>
+                        <li><a href="javascript:;">孕妇装/孕产妇用品/营养</a></li>
+                        <li><a href="javascript:;">宝宝用品</a></li>
+                        <li><a href="javascript:;">女装/女士精品</a></li>
+                        <li><a href="javascript:;">女鞋</a></li>
+                        <li><a href="javascript:;">女装服</a></li>
+                        <li><a href="javascript:;">饰配件/皮带/帽子/围巾</a></li>
+                        <li><a href="javascript:;">女士内衣/男士内衣/家居服</a></li>
+                        <li><a href="javascript:;">男装童装/婴儿装/亲子装</a></li>
+                        <li><a href="javascript:;">流行女鞋</a></li>
+                        <li><a href="javascript:;">保健滋补医药器械</a></li>
+                        <li><a href="javascript:;">运动服/休闲服</a></li>
+                        <li><a href="javascript:;">流行男装</a></li>
+                        <li><a href="javascript:;">模玩/动漫/明星/COS/桌游</a></li>
+                        <li><a href="javascript:;">宠物/宠物食品及用品</a></li>
+                        <li><a href="javascript:;">零食/坚果/特产</a></li>
+                        <li><a href="javascript:;">美容护肤/美体/精油</a></li>
+                        <li><a href="javascript:;">床上用品/套件/被子/枕头</a></li>
+                        <li><a href="javascript:;">鲜花速递/花卉仿真/绿植园艺</a></li>
+                        <li><a href="javascript:;">粮油米面/土特产/调味品</a></li>
+                        <li><a href="javascript:;">运动服/休闲服装</a></li>
+                        <li><a href="javascript:;">电动车/配件/交通工具</a></li>
+                        <li><a href="javascript:;">洗护清洁剂/卫生巾/纸/香薰</a></li>
+                        <li><a href="javascript:;">摩托车/装备/配件厨房电器</a></li>
+                        <li><a href="javascript:;">书籍/杂志/报纸</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- tab 想找 -->
+            <div class="tab-tryToFind">
+                <div class="title">
+                    <h4>您是不是想找:</h4>
+                </div>
+                <div class="content">
+                    <ul>
+                        <li><a href="javascript:;">收纳盒</a></li>
+                        <li><a href="javascript:;">书本收纳</a></li>
+                        <li><a href="javascript:;">收纳袋</a></li>
+                        <li><a href="javascript:;">桌面收纳</a></li>
+                        <li><a href="javascript:;">收纳架</a></li>
+                        <li><a href="javascript:;">透明收纳</a></li>
+                        <li><a href="javascript:;">收纳箱</a></li>
+                        <li><a href="javascript:;">置物架</a></li>
+                        <li><a href="javascript:;">厨房收纳</a></li>
+                        <li><a href="javascript:;">收纳抽屉</a></li>
+                        <li><a href="javascript:;">衣柜收纳</a></li>
+                        <li><a href="javascript:;">书架</a></li>
+                        <li><a href="javascript:;">鞋架</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- tab 排序 -->
+            <div class="tab-sort">
+                <div class="hd">
+                    <div class="left">
+                        <div class="tab">
+                            <ul>
+                                <li class="current"><a href="javascript:;">综合排序</a></li>
+                                <li><a href="javascript:;">销量</a></li>
+                                <li><a href="javascript:;">信用</a></li>
+                                <li><a href="javascript:;" id="price">价格<i class="iconfont icon-xiangxia"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="price-opetion">
+                            <ul>
+                                <li><a href="javascript:;">价格从低到高</a></li>
+                                <li><a href="javascript:;">价格从高到低</a></li>
+                                <li><a href="javascript:;">总价从低到高</a></li>
+                                <li><a href="javascript:;">总价从高到低</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="middle">
+                        <div class="priceRange onfocus">
+                            <ul>
+                                <li class="ipt">
+                                    <input type="text" name="" id="" placeholder="¥">
+                                </li>
+                                <li class="line">-</li>
+                                <li class="ipt">
+                                    <input type="text" name="" id="" placeholder="¥">
+                                </li>
+                                <li>
+                                    <button type="button" class="priceRangeBtn hide">确定</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="priceBar">
+                            <a href="javascript:;">
+                                <span class="bar" style="height: 50%;"></span>
+                            </a>
+                            <a href="javascript:;">
+                                <span class="bar" style="height: 80%;"></span>
+                            </a>
+                            <a href="javascript:;">
+                                <span class="bar" style="height: 30%;"></span>
+                            </a>
+                            <a href="javascript:;">
+                                <span class="bar" style="height: 10%;"></span>
+                            </a>
+                        </div>
+                        <!-- 柱状图显示的提示框 -->
+                        <div class="pop">
+                            <span class="info">30%用户喜欢的价位</span>
+                            <span class="triangle"></span>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <ul>
+                            <li><a href="javascript:;">发货地<i class="iconfont icon-xiangxia"></i></a></li>
+                            <li><a href="javascript:;" title="网格模式"><i class="iconfont icon-24gf-appsBig"></i></a></li>
+                            <li><a href="javascript:;" title="列表模式"><i class="iconfont icon-danlieliebiao"></i></a></li>
+                            <li>
+                                <a href="javascript:;" class="pre" title="上一页"><i class="iconfont icon-fanhui"></i></a>
+                                <span><em>1</em>/<em>100</em></span>
+                                <a href="javascript:;" class="next" title="下一页"><i
+                                        class="iconfont icon-gengduo"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bd">
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="" id="baoyou" value="包邮">
+                            <label for="baoyou">包邮</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="" id="zengsong" value="赠送退货运费险">
+                            <label for="zengsong">赠送退货运费险</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="" id="xinpin" value="新品">
+                            <label for="xinpin">新品</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="" id="gongyi" value="公益宝贝">
+                            <label for="gongyi">公益宝贝</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="" id="ershou" value="二手">
+                            <label for="ershou">二手</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="" id="tianmao" value="天猫">
+                            <label for="tianmao">天猫</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="" id="boazhang" value="正品保障">
+                            <label for="boazhang">正品保障</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="" id="tuihuo" value="7+天内退货">
+                            <label for="tuihuo">7+天内退货</label>
+                        </li>
+                    </ul>
+                    <a href="javascript:;" class="more">更多<i class="iconfont icon-xiangxia"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- content-tab end -->
+
+    <!-- content-goods start -->
+    <div class="content-goods wrapper">
+        <div class="goods wraper940">
+            <div class="box">
+                <div class="pic">
+                    <a href="javascript:;"><img src="../uploads/goods_01.jpg" alt=""></a>
+                </div>
+                <div class="price">
+                    <span>¥35.80</span>
+                    <span><strong>8万+</strong>人付款</span>
+                </div>
+                <div class="info">
+                    <a href="javascript:;">抽真空压缩袋整理袋被子衣物专用收纳衣服神器密封家用棉被羽绒服</a>
+                </div>
+                <div class="store">
+                    <a href="javascript:;"><i class="iconfont icon-danlieliebiao"></i>益伟家居旗舰店</a>
+                    <span>浙江 金华</span>
+                </div>
+                <div class="minIcon">
+                    <a href="javascript:;"><i class="dianpu"></i></a>
+                    <a href="javascript:;"><i class="tip"></i></a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="pic">
+                    <a href="javascript:;"><img src="../uploads/goods_02.jpg" alt=""></a>
+                </div>
+                <div class="price">
+                    <span>¥169.00</span>
+                    <span><strong>4000+</strong>人付款</span>
+                </div>
+                <div class="info">
+                    <a href="javascript:;">佳帮手加厚抽屉收纳柜客厅零食储物柜置物儿童柜宝宝衣柜家用塑料</a>
+                </div>
+                <div class="store">
+                    <a href="javascript:;"><i class="iconfont icon-danlieliebiao"></i>佳帮手旗舰店</a>
+                    <span>广东 广州</span>
+                </div>
+                <div class="minIcon">
+                    <a href="javascript:;"><i class="dianpu"></i></a>
+                    <a href="javascript:;"><i class="tip"></i></a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="pic">
+                    <a href="javascript:;"><img src="../uploads/goods_03.jpg" alt=""></a>
+                </div>
+                <div class="price">
+                    <span>¥12.90</span>
+                    <span><strong>6万+</strong>人付款</span>
+                </div>
+                <div class="info">
+                    <a href="javascript:;">浴室卫生间置物架免打孔厕所洗手间洗漱台墙上三角收纳洗澡壁挂式</a>
+                </div>
+                <div class="store">
+                    <a href="javascript:;"><i class="iconfont icon-danlieliebiao"></i>尔沫旗舰店</a>
+                    <span>浙江 温州</span>
+                </div>
+                <div class="minIcon">
+                    <a href="javascript:;"><i class="dianpu"></i></a>
+                    <a href="javascript:;"><i class="tip"></i></a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="pic">
+                    <a href="javascript:;"><img src="../uploads/goods_04.jpg" alt=""></a>
+                </div>
+                <div class="price">
+                    <span>¥870.00</span>
+                    <span><strong>700+</strong>人付款</span>
+                </div>
+                <div class="info">
+                    <a href="javascript:;">林氏木业轻奢简约现代鞋柜客厅家用门口大容量阳台收纳储物柜JH2N</a>
+                </div>
+                <div class="store">
+                    <a href="javascript:;"><i class="iconfont icon-danlieliebiao"></i>林氏木业家具旗舰店</a>
+                    <span>广东 佛山</span>
+                </div>
+                <div class="minIcon">
+                    <a href="javascript:;"><i class="dianpu"></i></a>
+                    <a href="javascript:;"><i class="tip"></i></a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="pic">
+                    <a href="javascript:;"><img src="../uploads/goods_01.jpg" alt=""></a>
+                </div>
+                <div class="price">
+                    <span>¥35.80</span>
+                    <span><strong>8万+</strong>人付款</span>
+                </div>
+                <div class="info">
+                    <a href="javascript:;">抽真空压缩袋整理袋被子衣物专用收纳衣服神器密封家用棉被羽绒服</a>
+                </div>
+                <div class="store">
+                    <a href="javascript:;"><i class="iconfont icon-danlieliebiao"></i>益伟家居旗舰店</a>
+                    <span>浙江 金华</span>
+                </div>
+                <div class="minIcon">
+                    <a href="javascript:;"><i class="dianpu"></i></a>
+                    <a href="javascript:;"><i class="tip"></i></a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="pic">
+                    <a href="javascript:;"><img src="../uploads/goods_02.jpg" alt=""></a>
+                </div>
+                <div class="price">
+                    <span>¥169.00</span>
+                    <span><strong>4000+</strong>人付款</span>
+                </div>
+                <div class="info">
+                    <a href="javascript:;">佳帮手加厚抽屉收纳柜客厅零食储物柜置物儿童柜宝宝衣柜家用塑料</a>
+                </div>
+                <div class="store">
+                    <a href="javascript:;"><i class="iconfont icon-danlieliebiao"></i>佳帮手旗舰店</a>
+                    <span>广东 广州</span>
+                </div>
+                <div class="minIcon">
+                    <a href="javascript:;"><i class="dianpu"></i></a>
+                    <a href="javascript:;"><i class="tip"></i></a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="pic">
+                    <a href="javascript:;"><img src="../uploads/goods_03.jpg" alt=""></a>
+                </div>
+                <div class="price">
+                    <span>¥12.90</span>
+                    <span><strong>6万+</strong>人付款</span>
+                </div>
+                <div class="info">
+                    <a href="javascript:;">浴室卫生间置物架免打孔厕所洗手间洗漱台墙上三角收纳洗澡壁挂式</a>
+                </div>
+                <div class="store">
+                    <a href="javascript:;"><i class="iconfont icon-danlieliebiao"></i>尔沫旗舰店</a>
+                    <span>浙江 温州</span>
+                </div>
+                <div class="minIcon">
+                    <a href="javascript:;"><i class="dianpu"></i></a>
+                    <a href="javascript:;"><i class="tip"></i></a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="pic">
+                    <a href="javascript:;"><img src="../uploads/goods_04.jpg" alt=""></a>
+                </div>
+                <div class="price">
+                    <span>¥870.00</span>
+                    <span><strong>700+</strong>人付款</span>
+                </div>
+                <div class="info">
+                    <a href="javascript:;">林氏木业轻奢简约现代鞋柜客厅家用门口大容量阳台收纳储物柜JH2N</a>
+                </div>
+                <div class="store">
+                    <a href="javascript:;"><i class="iconfont icon-danlieliebiao"></i>林氏木业家具旗舰店</a>
+                    <span>广东 佛山</span>
+                </div>
+                <div class="minIcon">
+                    <a href="javascript:;"><i class="dianpu"></i></a>
+                    <a href="javascript:;"><i class="tip"></i></a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="pic">
+                    <a href="javascript:;"><img src="../uploads/goods_01.jpg" alt=""></a>
+                </div>
+                <div class="price">
+                    <span>¥35.80</span>
+                    <span><strong>8万+</strong>人付款</span>
+                </div>
+                <div class="info">
+                    <a href="javascript:;">抽真空压缩袋整理袋被子衣物专用收纳衣服神器密封家用棉被羽绒服</a>
+                </div>
+                <div class="store">
+                    <a href="javascript:;"><i class="iconfont icon-danlieliebiao"></i>益伟家居旗舰店</a>
+                    <span>浙江 金华</span>
+                </div>
+                <div class="minIcon">
+                    <a href="javascript:;"><i class="dianpu"></i></a>
+                    <a href="javascript:;"><i class="tip"></i></a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="pic">
+                    <a href="javascript:;"><img src="../uploads/goods_02.jpg" alt=""></a>
+                </div>
+                <div class="price">
+                    <span>¥169.00</span>
+                    <span><strong>4000+</strong>人付款</span>
+                </div>
+                <div class="info">
+                    <a href="javascript:;">佳帮手加厚抽屉收纳柜客厅零食储物柜置物儿童柜宝宝衣柜家用塑料</a>
+                </div>
+                <div class="store">
+                    <a href="javascript:;"><i class="iconfont icon-danlieliebiao"></i>佳帮手旗舰店</a>
+                    <span>广东 广州</span>
+                </div>
+                <div class="minIcon">
+                    <a href="javascript:;"><i class="dianpu"></i></a>
+                    <a href="javascript:;"><i class="tip"></i></a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="pic">
+                    <a href="javascript:;"><img src="../uploads/goods_03.jpg" alt=""></a>
+                </div>
+                <div class="price">
+                    <span>¥12.90</span>
+                    <span><strong>6万+</strong>人付款</span>
+                </div>
+                <div class="info">
+                    <a href="javascript:;">浴室卫生间置物架免打孔厕所洗手间洗漱台墙上三角收纳洗澡壁挂式</a>
+                </div>
+                <div class="store">
+                    <a href="javascript:;"><i class="iconfont icon-danlieliebiao"></i>尔沫旗舰店</a>
+                    <span>浙江 温州</span>
+                </div>
+                <div class="minIcon">
+                    <a href="javascript:;"><i class="dianpu"></i></a>
+                    <a href="javascript:;"><i class="tip"></i></a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="pic">
+                    <a href="javascript:;"><img src="../uploads/goods_04.jpg" alt=""></a>
+                </div>
+                <div class="price">
+                    <span>¥870.00</span>
+                    <span><strong>700+</strong>人付款</span>
+                </div>
+                <div class="info">
+                    <a href="javascript:;">林氏木业轻奢简约现代鞋柜客厅家用门口大容量阳台收纳储物柜JH2N</a>
+                </div>
+                <div class="store">
+                    <a href="javascript:;"><i class="iconfont icon-danlieliebiao"></i>林氏木业家具旗舰店</a>
+                    <span>广东 佛山</span>
+                </div>
+                <div class="minIcon">
+                    <a href="javascript:;"><i class="dianpu"></i></a>
+                    <a href="javascript:;"><i class="tip"></i></a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="pic">
+                    <a href="javascript:;"><img src="../uploads/goods_01.jpg" alt=""></a>
+                </div>
+                <div class="price">
+                    <span>¥35.80</span>
+                    <span><strong>8万+</strong>人付款</span>
+                </div>
+                <div class="info">
+                    <a href="javascript:;">抽真空压缩袋整理袋被子衣物专用收纳衣服神器密封家用棉被羽绒服</a>
+                </div>
+                <div class="store">
+                    <a href="javascript:;"><i class="iconfont icon-danlieliebiao"></i>益伟家居旗舰店</a>
+                    <span>浙江 金华</span>
+                </div>
+                <div class="minIcon">
+                    <a href="javascript:;"><i class="dianpu"></i></a>
+                    <a href="javascript:;"><i class="tip"></i></a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="pic">
+                    <a href="javascript:;"><img src="../uploads/goods_02.jpg" alt=""></a>
+                </div>
+                <div class="price">
+                    <span>¥169.00</span>
+                    <span><strong>4000+</strong>人付款</span>
+                </div>
+                <div class="info">
+                    <a href="javascript:;">佳帮手加厚抽屉收纳柜客厅零食储物柜置物儿童柜宝宝衣柜家用塑料</a>
+                </div>
+                <div class="store">
+                    <a href="javascript:;"><i class="iconfont icon-danlieliebiao"></i>佳帮手旗舰店</a>
+                    <span>广东 广州</span>
+                </div>
+                <div class="minIcon">
+                    <a href="javascript:;"><i class="dianpu"></i></a>
+                    <a href="javascript:;"><i class="tip"></i></a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="pic">
+                    <a href="javascript:;"><img src="../uploads/goods_03.jpg" alt=""></a>
+                </div>
+                <div class="price">
+                    <span>¥12.90</span>
+                    <span><strong>6万+</strong>人付款</span>
+                </div>
+                <div class="info">
+                    <a href="javascript:;">浴室卫生间置物架免打孔厕所洗手间洗漱台墙上三角收纳洗澡壁挂式</a>
+                </div>
+                <div class="store">
+                    <a href="javascript:;"><i class="iconfont icon-danlieliebiao"></i>尔沫旗舰店</a>
+                    <span>浙江 温州</span>
+                </div>
+                <div class="minIcon">
+                    <a href="javascript:;"><i class="dianpu"></i></a>
+                    <a href="javascript:;"><i class="tip"></i></a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="pic">
+                    <a href="javascript:;"><img src="../uploads/goods_04.jpg" alt=""></a>
+                </div>
+                <div class="price">
+                    <span>¥870.00</span>
+                    <span><strong>700+</strong>人付款</span>
+                </div>
+                <div class="info">
+                    <a href="javascript:;">林氏木业轻奢简约现代鞋柜客厅家用门口大容量阳台收纳储物柜JH2N</a>
+                </div>
+                <div class="store">
+                    <a href="javascript:;"><i class="iconfont icon-danlieliebiao"></i>林氏木业家具旗舰店</a>
+                    <span>广东 佛山</span>
+                </div>
+                <div class="minIcon">
+                    <a href="javascript:;"><i class="dianpu"></i></a>
+                    <a href="javascript:;"><i class="tip"></i></a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="pic">
+                    <a href="javascript:;"><img src="../uploads/goods_01.jpg" alt=""></a>
+                </div>
+                <div class="price">
+                    <span>¥35.80</span>
+                    <span><strong>8万+</strong>人付款</span>
+                </div>
+                <div class="info">
+                    <a href="javascript:;">抽真空压缩袋整理袋被子衣物专用收纳衣服神器密封家用棉被羽绒服</a>
+                </div>
+                <div class="store">
+                    <a href="javascript:;"><i class="iconfont icon-danlieliebiao"></i>益伟家居旗舰店</a>
+                    <span>浙江 金华</span>
+                </div>
+                <div class="minIcon">
+                    <a href="javascript:;"><i class="dianpu"></i></a>
+                    <a href="javascript:;"><i class="tip"></i></a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="pic">
+                    <a href="javascript:;"><img src="../uploads/goods_02.jpg" alt=""></a>
+                </div>
+                <div class="price">
+                    <span>¥169.00</span>
+                    <span><strong>4000+</strong>人付款</span>
+                </div>
+                <div class="info">
+                    <a href="javascript:;">佳帮手加厚抽屉收纳柜客厅零食储物柜置物儿童柜宝宝衣柜家用塑料</a>
+                </div>
+                <div class="store">
+                    <a href="javascript:;"><i class="iconfont icon-danlieliebiao"></i>佳帮手旗舰店</a>
+                    <span>广东 广州</span>
+                </div>
+                <div class="minIcon">
+                    <a href="javascript:;"><i class="dianpu"></i></a>
+                    <a href="javascript:;"><i class="tip"></i></a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="pic">
+                    <a href="javascript:;"><img src="../uploads/goods_03.jpg" alt=""></a>
+                </div>
+                <div class="price">
+                    <span>¥12.90</span>
+                    <span><strong>6万+</strong>人付款</span>
+                </div>
+                <div class="info">
+                    <a href="javascript:;">浴室卫生间置物架免打孔厕所洗手间洗漱台墙上三角收纳洗澡壁挂式</a>
+                </div>
+                <div class="store">
+                    <a href="javascript:;"><i class="iconfont icon-danlieliebiao"></i>尔沫旗舰店</a>
+                    <span>浙江 温州</span>
+                </div>
+                <div class="minIcon">
+                    <a href="javascript:;"><i class="dianpu"></i></a>
+                    <a href="javascript:;"><i class="tip"></i></a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="pic">
+                    <a href="javascript:;"><img src="../uploads/goods_04.jpg" alt=""></a>
+                </div>
+                <div class="price">
+                    <span>¥870.00</span>
+                    <span><strong>700+</strong>人付款</span>
+                </div>
+                <div class="info">
+                    <a href="javascript:;">林氏木业轻奢简约现代鞋柜客厅家用门口大容量阳台收纳储物柜JH2N</a>
+                </div>
+                <div class="store">
+                    <a href="javascript:;"><i class="iconfont icon-danlieliebiao"></i>林氏木业家具旗舰店</a>
+                    <span>广东 佛山</span>
+                </div>
+                <div class="minIcon">
+                    <a href="javascript:;"><i class="dianpu"></i></a>
+                    <a href="javascript:;"><i class="tip"></i></a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="pic">
+                    <a href="javascript:;"><img src="../uploads/goods_04.jpg" alt=""></a>
+                </div>
+                <div class="price">
+                    <span>¥870.00</span>
+                    <span><strong>700+</strong>人付款</span>
+                </div>
+                <div class="info">
+                    <a href="javascript:;">林氏木业轻奢简约现代鞋柜客厅家用门口大容量阳台收纳储物柜JH2N</a>
+                </div>
+                <div class="store">
+                    <a href="javascript:;"><i class="iconfont icon-danlieliebiao"></i>林氏木业家具旗舰店</a>
+                    <span>广东 佛山</span>
+                </div>
+                <div class="minIcon">
+                    <a href="javascript:;"><i class="dianpu"></i></a>
+                    <a href="javascript:;"><i class="tip"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- content-goods end -->
+
+    <!-- 分页 start -->
+    <div class="wrapper">
+        <div id="paging" class="paging wraper940"></div>
+    </div>
+    <!-- 分页 end -->
+
+    <!-- 底部搜索 start -->
+    <div class="wrapper">
+        <div class="bottom-search">
+            <input type="text" value="" class="searchVal" placeholder="请输入要搜索的词">
+            <button type="submit">搜&nbsp;索</button>
+        </div>
+    </div>
+    <!-- 底部搜索 end -->
+
+
+    <!-- 右侧返回顶部 工具栏 start -->
+    <div class="tool">
+        <ul>
+            <li>
+                <a href="javascript:;" class="goUp"><i class="iconfont icon-fanhuidingbu"></i>回到<br>顶部</a>
+            </li>
+            <li>
+                <a href="javascript:;"><i class="iconfont icon-lihe"></i>亲测</a>
+            </li>
+            <li>
+                <a href="javascript:;"><i class="iconfont icon-bianji"></i>用户<br>反馈</a>
+            </li>
+            <li>
+                <a href="javascript:;"><i class="iconfont icon-wenhao"></i>探索<br>帮助</a>
+            </li>
+        </ul>
+    </div>
+    <!-- 右侧返回顶部 工具栏 end -->
+
+
+
+
+
+
+    <!-- 底部版权信息 start -->
+    <div class="footer">
+        <div class="wrapper">
+            <div class="top">
+                <ul class="clearfix">
+                    <li><a href="javascript:;">阿里巴巴集团</a></li>
+                    <li><a href="javascript:;">淘宝网</a></li>
+                    <li><a href="javascript:;">天猫</a></li>
+                    <li><a href="javascript:;">聚划算</a></li>
+                    <li><a href="javascript:;">全球速卖通</a></li>
+                    <li><a href="javascript:;">阿里巴巴国际交易市场</a></li>
+                    <li><a href="javascript:;">1688</a></li>
+                    <li><a href="javascript:;">阿里妈妈</a></li>
+                    <li><a href="javascript:;">飞猪</a></li>
+                    <li><a href="javascript:;">阿里云计算</a></li>
+                    <li><a href="javascript:;">YunOS</a></li>
+                    <li><a href="javascript:;">阿里通信</a></li>
+                    <li><a href="javascript:;">一淘</a></li>
+                    <li><a href="javascript:;">万网</a></li>
+                    <li><a href="javascript:;">高德</a></li>
+                    <li><a href="javascript:;">UC</a></li>
+                    <li><a href="javascript:;">友盟</a></li>
+                    <li><a href="javascript:;">虾米</a></li>
+                    <li><a href="javascript:;">钉钉</a></li>
+                    <li><a href="javascript:;">支付宝</a></li>
+                    <li><a href="javascript:;">优酷</a></li>
+                    <li><a href="javascript:;">土豆</a></li>
+                    <li><a href="javascript:;">阿里健康</a></li>
+                    <li><a href="javascript:;">阿里影业</a></li>
+                    <li><a href="javascript:;">阿里体育</a></li>
+                    <li><a href="javascript:;">网商银行</a></li>
+                </ul>
+            </div>
+            <div class="bottom">
+                <div class="copyright">
+                    <ul class="clearfix">
+                        <li><a href="javascript:;">关于淘宝</a></li>
+                        <li><a href="javascript:;">合作伙伴</a></li>
+                        <li><a href="javascript:;">营销中心</a></li>
+                        <li><a href="javascript:;">廉正举报</a></li>
+                        <li><a href="javascript:;">联系客服</a></li>
+                        <li><a href="javascript:;">开放平台</a></li>
+                        <li><a href="javascript:;">诚征英才</a></li>
+                        <li><a href="javascript:;">联系我们</a></li>
+                        <li><a href="javascript:;">网站地图</a></li>
+                        <li><a href="javascript:;">法律声明及隐私权政策</a></li>
+                        <li><a href="javascript:;">知识产权</a></li>
+                        <li>|</li>
+                        <li>© 2003-现在 Taobao.com 版权所有</li>
+                    </ul>
+                </div>
+                <div class="certificate">
+                    <ul class="clearfix">
+                        <li><a href="javascript:;">网络文化经营许可证：浙网文[2013]0268-027号</a></li>
+                        <li><a href="javascript:;">增值电信业务经营许可证：浙B2-20080224</a></li>
+                        <li><a href="javascript:;">信息网络传播视听节目许可证：1109364号</a></li>
+                        <li><a href="javascript:;">互联网违法和不良信息举报电话：0571-81683755 blxxjb@alibaba-inc.com</a></li>
+                        <li><a href="javascript:;">浙公网安备 33010002000078号</a></li>
+                    </ul>
+                </div>
+                <div class="footer-pic">
+                    <ul class="clearfix">
+                        <li><a href="javascript:;"></a></li>
+                        <li><a href="javascript:;"></a></li>
+                        <li><a href="javascript:;"></a></li>
+                        <li><a href="javascript:;"></a></li>
+                        <li><a href="javascript:;"></a></li>
+                        <li><a href="javascript:;"></a></li>
+                        <li><a href="javascript:;"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 底部版权信息 end -->
+
+    <!-- 引入js文件 -->
+    <script src="../lib/layui-v2.6.8/layui/layui.js"></script>
+    <script src="../js/search.js"></script>
+</body>
+
+</html>

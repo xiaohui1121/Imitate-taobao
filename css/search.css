@@ -1,0 +1,900 @@
+/* 基本样式 */
+body, button, input, select, textarea {
+    background-color: #fff;
+    font: 12px/1.5 tahoma, arial, 'Hiragino Sans GB', '\5b8b\4f53', sans-serif;
+}
+
+blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, p, pre, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* wraper */
+.wraper940 {
+    width: 940px;
+}
+
+
+/* 顶部搜索 */
+.topSearch {
+    height: 60px;
+    padding-top: 16px;
+}
+
+.topSearch .header-wraper {
+    position: relative;
+    height: 44px;
+}
+
+.header-wraper .logo {
+    width: 105px;
+    height: 44px;
+    font-size: 0;
+}
+
+.header-wraper a {
+    display: block;
+    width: 105px;
+    height: 44px;
+    background: url(../images/logo.png) no-repeat;
+    background-size: contain;
+}
+
+/* search */
+.search-container {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    /* left: 260px; */
+    right: 0;
+    transform: translateY(-50%);
+    width: 678px;
+    height: 35px;
+    border: 2px solid #ff5500;
+}
+
+.search-type {
+    position: relative;
+    width: 69px;
+    background-color: #f5f5f5;
+}
+
+.search-type ul {
+    width: 68px;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+}
+
+.search-type ul li {
+    height: 29px;
+    line-height: 29px;
+    text-align: center;
+    display: none;
+}
+
+.search-type i {
+    position: absolute;
+    top: 6px;
+    right: 5px;
+    font-size: 12px !important;
+}
+
+.search-type ul li.current {
+    background-color: #f5f5f5;
+    display: block;
+}
+
+.search-type ul:hover li {
+    display: block;
+}
+
+.search-input {
+    flex: 1;
+}
+
+.search-input input {
+    width: 100%;
+    height: 100%;
+    padding: 0 32px 0 5px;
+    font-size: 14px;
+}
+
+.search-input input::placeholder {
+    font-size: 14px;
+    color: #666;
+}
+
+.search-btn {
+    width: 80px;
+}
+
+.search-btn button {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-size: 16px;
+    background-color: #ff4400;
+    font-weight: bold;
+}
+
+
+/* 切换 */
+.tab-switch {
+    height: 40px;
+    margin-top: 15px;
+}
+
+.tab-switch ul {
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid #ff4400;
+}
+
+.tab-switch ul li {
+    float: left;
+    height: 38px;
+    line-height: 38px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.tab-switch ul li.current {
+    background-color: #ff4400;
+}
+
+.tab-switch ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+}
+
+.tab-switch ul li:first-child a,
+.tab-switch ul li:hover {
+    color: #fff;
+    background-color: #f40;
+}
+
+/* 分类 */
+.tab-classify {
+    margin-top: 11px;
+}
+
+.tab-classify .hd {
+    height: 26px;
+    line-height: 26px;
+    background-color: #fff;
+}
+
+.tab-classify .hd h5 {
+    float: left;
+    color: #404040;
+    margin-left: 20px;
+    font-weight: 400;
+}
+
+.tab-classify .hd a {
+    float: right;
+    display: block;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 10px;
+    border: 1px solid #e8e8e8;
+    background-color: #f6f6f6;
+}
+
+.tab-classify .hd a i {
+    margin-left: 5px;
+}
+
+.tab-classify .bd {
+    margin-top: 10px;
+    padding: 0 10px;
+    border: 1px solid #e8e8e8;
+}
+
+.classify-item {
+    display: flex;
+    padding: 6px 16px;
+    border-bottom: 1px dashed #e8e8e8;
+}
+
+.classify-item:last-child {
+    border-bottom: none;
+}
+
+.classify-item .title {
+    flex: 1;
+    color: #999;
+}
+
+.classify-item .title h4 {
+    font-weight: 400;
+}
+
+.classify-item .body {
+    width: 710px;
+}
+
+.classify-item .body ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.classify-item .body ul li {
+    margin-right: 35px;
+    padding: 3px 0;
+}
+
+.classify-item .body ul li a {
+    color: #000;
+}
+
+.classify-item .body ul li a:hover {
+    color: #f40;
+}
+
+.classify-item .handle {
+    flex: 1;
+}
+
+.classify-item .handle span {
+    display: inline-block;
+    width: 34px;
+    height: 18px;
+    line-height: 16px;
+    text-align: center;
+}
+
+.classify-item .handle span:first-child {
+    border: 1px solid #dddcdc;
+}
+
+.classify-item .handle span:last-child {
+    position: relative;
+    margin-left: 15px;
+    padding-right: 10px;
+}
+
+.classify-item .handle span:last-child i {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* 筛选条件 tab */
+.filter {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.filter .body ul {
+    display: flex;
+}
+
+.filter .body ul li {
+    padding: 0;
+    margin: 0;
+}
+
+.filter .body a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 9px 18px;
+    outline: none;
+    border: none;
+}
+
+.filter .body ul li a:hover {
+    color: #000;
+    background-color: #e2e2e2;
+}
+
+.filter .body ul li a i {
+    margin-left: 5px;
+}
+
+/* 筛选条件的 tab 项目列表 */
+.tab-classify .filter-item {
+    padding: 6px 84px 16px 26px;
+    border: 1px solid #e8e8e8;
+    border-top: none;
+    display: none;
+}
+
+.tab-classify .filter-item ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tab-classify .filter-item li {
+    margin-right: 35px;
+    margin-top: 10px;
+}
+
+/* 想找 */
+.tab-tryToFind {
+    display: flex;
+    margin-top: 10px;
+    padding: 12px 25px;
+    border: 1px solid #e8e8e8;
+}
+
+.tab-tryToFind .title {
+    width: 85px;
+}
+
+.tab-tryToFind .title h4 {
+    color: #999;
+    font-weight: 400;
+}
+
+.tab-tryToFind .content {
+    flex: 1;
+}
+
+.tab-tryToFind .content ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* 排序 */
+.tab-sort {
+    margin-top: 10px;
+    border: 1px solid #e8e8e8;
+    background-color: #ffffff;
+}
+
+.tab-sort .hd {
+    display: flex;
+    height: 40px;
+    background-color: #f5f5f5;
+}
+
+.tab-sort .hd .left {
+    position: relative;
+    width: 280px;
+}
+
+.tab-sort .hd .left .tab ul {
+    display: flex;
+}
+
+.tab-sort .hd .left .tab li {
+    flex: 1;
+}
+
+.tab-sort .hd .left .tab li a {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.tab-sort .hd .left .tab li a:hover {
+    background-color: #fff;
+    color: #f40;
+    border-left: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+}
+
+.tab-sort .hd .left .current a {
+    background-color: #fff;
+    color: #f40;
+}
+
+.price-opetion {
+    position: absolute;
+    top: 0;
+    left: 210px;
+    width: 122px;
+    border: 1px solid #cccccc;
+    background-color: #fff;
+    z-index: 999;
+    display: none;
+}
+
+.price-opetion ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.price-opetion li {
+    flex: 1;
+    /* padding: 10px 10px; */
+}
+
+.price-opetion li a {
+    display: block;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+}
+
+.tab-sort .hd .middle {
+    position: relative;
+    width: 380px;
+}
+
+.tab-sort .priceRange {
+    position: absolute;
+    width: 193px;
+    height: 40px;
+    padding: 9px 10px;
+    border: 1px solid #cccccc;
+    background-color: #fff;
+}
+
+.tab-sort .priceRange li {
+    float: left;
+}
+
+.tab-sort .priceRange li.ipt {
+    width: 54px;
+    height: 22px;
+}
+
+.tab-sort .priceRange input {
+    width: 100%;
+    height: 100%;
+    padding: 0 2px;
+    border: 1px solid #dfdfdf;
+}
+
+.tab-sort .priceRange input:focus {
+    border-radius: 5px;
+    border: 2px solid #101010;
+}
+
+.tab-sort .priceRange .line {
+    margin: 0 3px;
+}
+
+.tab-sort .priceRange button {
+    width: 43px;
+    height: 23px;
+    margin-left: 8px;
+    color: #fff;
+    background-color: #ff4400;
+}
+
+.tab-sort .priceRange button:hover {
+    background-color: #f82800;
+}
+
+/* 当priceRange获得焦点后的样式更改 */
+.onfocus {
+    background: #f5f5f5 !important;
+    border: 1px solid #f5f5f5 !important;
+}
+
+/* 小柱状图显示 */
+.tab-sort .priceBar {
+    display: flex;
+    position: absolute;
+    top: 11px;
+    left: 178px;
+    width: 60px;
+    height: 20px;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    border-right: none;
+}
+
+.priceBar a {
+    flex: 1;
+    border-right: 1px solid #e5e5e5;
+}
+
+.priceBar a .bar {
+    position: absolute;
+    bottom: 0;
+    left: -1px;
+    display: block;
+    width: 16px;
+    background-color: #ededed;
+    border: 1px solid #c7c7c7;
+}
+
+.priceBar a:hover .bar {
+    background-color: #ff4400;
+}
+
+.priceBar a:nth-child(2) .bar {
+    left: 14px;
+    z-index: 2;
+}
+
+.priceBar a:nth-child(3) .bar {
+    left: 29px;
+    z-index: 3;
+}
+
+.priceBar a:nth-child(4) .bar {
+    left: 44px;
+    z-index: 4;
+}
+
+/* 柱状图显示的提示框 */
+.tab-sort .pop {
+    position: absolute;
+    top: -30px;
+    left: 123px;
+    height: 29px;
+    line-height: 29px;
+    text-align: center;
+    border: 1px solid #ffcc7f;
+    padding: 0 5px;
+    border-radius: 5px;
+    background-color: #ffffe5;
+    display: none;
+}
+
+.tab-sort .pop .triangle {
+    position: absolute;
+    top: 26px;
+    left: 50%;
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-right: 1px solid #ffcc7f;
+    border-bottom: 1px solid #ffcc7f;
+    background-color: #ffffe5;
+    transform: rotate(45deg) translateX(-50%);
+}
+
+.tab-sort .hd .right {
+    flex: 1;
+}
+
+.tab-sort .hd .right ul {
+    display: flex;
+    height: 100%;
+    line-height: 41px;
+    text-align: center;
+}
+
+.tab-sort .hd .right li:nth-child(1) {
+    flex: 2;
+}
+
+.tab-sort .hd .right li:nth-child(2) {
+    flex: 1;
+}
+
+.tab-sort .hd .right li:nth-child(3) {
+    flex: 1;
+}
+
+.tab-sort .hd .right li:nth-child(4) {
+    flex: 2;
+}
+
+.tab-sort .hd .right li:nth-child(-n+3) a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-right: 1px solid #e5e5e5;
+}
+
+.tab-sort .hd .right li:nth-child(-n+3) a i {
+    font-size: 14px !important;
+}
+
+.tab-sort .hd .right li:nth-child(2) a,
+.tab-sort .hd .right li:nth-child(-n+3) a:hover {
+    background-color: #fff;
+}
+
+.tab-sort .hd .right li:nth-child(2) a i,
+.tab-sort .hd .right li:last-child span em:first-child {
+    color: #f40;
+}
+
+.tab-sort .bd ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 665px;
+    padding: 8px 80px 8px 8px;
+    cursor: pointer;
+}
+
+.tab-sort .bd input {
+    margin-top: -2px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.tab-sort .bd li label {
+    cursor: pointer;
+}
+
+.tab-sort .bd {
+    position: relative;
+    border-top: 1px solid #e8e8e8;
+    user-select: none;
+}
+
+.tab-sort .bd .more {
+    position: absolute;
+    top: 8px;
+    right: 282px;
+    display: inline-block;
+    padding: 0 5px;
+    border-right: 1px solid #ededed;
+}
+
+/* 商品展示区域 */
+.goods {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 23px;
+}
+
+.goods .box {
+    width: 220px;
+    margin-bottom: 22px;
+    padding-bottom: 10px;
+    border: 1px solid #eeeeee;
+}
+
+.goods .box:hover {
+    border-color: #ff5112;
+}
+
+.goods .price {
+    height: 22px;
+    line-height: 22px;
+    margin-top: 11px;
+    padding: 0 10px;
+}
+
+.goods .price span:nth-child(1) {
+    position: relative;
+    float: left;
+    font-size: 18px;
+    color: #ff4600;
+}
+
+.goods .price span:nth-child(2) {
+    float: right;
+}
+
+.goods .price span:nth-child(2) strong {
+    font-weight: 400;
+}
+
+.goods .info {
+    padding: 0 10px;
+    margin: 5px 0;
+    letter-spacing: 0.8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.goods .info a:hover {
+    text-decoration: underline;
+}
+
+.goods .store {
+    padding: 0 10px;
+}
+
+.goods .store a {
+    float: left;
+    text-decoration: underline;
+}
+
+.goods .store a i {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    line-height: 12px;
+    color: #ff4400;
+    margin-right: 2px;
+}
+
+.goods .store span {
+    float: right;
+}
+
+.goods .minIcon {
+    position: relative;
+    height: 20px;
+    margin-top: 30px;
+    padding: 0 10px 0 6px;
+}
+
+.goods .dianpu,
+.goods .tip {
+    position: absolute;
+    top: 2px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+}
+
+.goods .dianpu {
+    left: 10px;
+    background: url(../images/minicon.png) no-repeat;
+    background-size: 308px 298px;
+    background-position: -187px -199px;
+}
+
+.goods .tip {
+    right: 10px;
+    background: url(../images/minicon2.png) no-repeat;
+    background-size: 458px 458px;
+    background-position: -435px -86px;
+}
+
+/* 分页 */
+.paging {
+    margin: 0 auto;
+}
+
+/* 底部搜索 */
+.bottom-search {
+    display: flex;
+    width: 632px;
+    height: 31px;
+    margin: 30px auto 20px;
+    border: 2px solid #ff5500;
+}
+
+.bottom-search button {
+    width: 80px;
+    height: 28px;
+    background-color: #ff4400;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.bottom-search input {
+    flex: 1;
+    padding: 0 5px;
+    font-size: 14px;
+}
+
+
+/* 固定搜索栏 */
+.fixed-search {
+    position: fixed;
+    top: 0;
+    height: 50px;
+    padding: 7px 0;
+    background-color: #fff;
+    box-shadow: rgb(0 0 0 / 10%) 0 1px 5px;
+    z-index: 9999;
+    display: none;
+}
+
+.fixed-search .logo {
+    width: 80px;
+    height: 33px;
+    font-size: 0;
+}
+
+.fixed-search a {
+    display: block;
+    width: 80px;
+    height: 33px;
+    background: url(../images/logo.png) no-repeat;
+    background-size: contain;
+}
+
+.fixed-search .search-container {
+    left: 120px;
+    width: 520px;
+}
+
+.fixed-search .ruleOut {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 281px;
+    height: 100%;
+    line-height: 50px;
+    padding: 0 10px;
+    border-left: 1px solid #e8e8e8;
+    background-color: #f5f5f5;
+}
+
+.fixed-search .ruleOut input {
+    width: 135px;
+    height: 26px;
+    padding: 0 5px;
+    border: 1px solid #e8e8e8;
+}
+
+.fixed-search .ruleOut input:focus {
+    border: 1px solid #ff4400;
+}
+
+.fixed-search .ruleOut button {
+    width: 44px;
+    height: 26px;
+    margin-left: -4px;
+    color: #fff;
+    background-color: #ff4400;
+}
+
+.fixed-search .ruleOut i {
+    position: absolute;
+    top: 25px;
+    right: -7px;
+    font-size: 15px !important;
+    cursor: pointer;
+}
+
+.fixed-search .ruleOut i:hover {
+    color: #ff4600;
+}
+
+/* 右侧工具栏 */
+.tool {
+    position: fixed;
+    bottom: 30px;
+    right: 0;
+    width: 50px;
+}
+
+.tool ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.tool .goUp {
+    color: #fff;
+    background-color: #fa4900;
+    display: none;
+}
+
+.tool .goUp:hover {
+    color: #fff;
+}
+
+.tool ul li:nth-child(2) a {
+    padding-top: 14px;
+}
+
+.tool ul li a {
+    position: relative;
+    display: block;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 10px;
+    background-color: #f4f4f4;
+    border: 1px solid #d6d6d6;
+    font-size: 0;
+    text-align: center;
+    padding-top: 2px;
+}
+
+.tool ul li a:hover {
+    font-size: 14px;
+    color: #6c6c6c;
+}
+
+.tool ul li a i.iconfont {
+    position: absolute;
+    top: 8px;
+    left: 14px;
+    font-size: 20px !important;
+}
+
+.tool ul li a:hover i {
+    font-size: 0 !important;
+}
